@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\source\\repos\\Exam\\Game\\Game.csproj": {}
+    "C:\\Users\\DELL\\Desktop\\Repos\\Plovdiv-University-Projects\\C#\\HeroGame\\Exam\\Game\\Game.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\source\\repos\\Exam\\Game\\Game.csproj": {
+    "C:\\Users\\DELL\\Desktop\\Repos\\Plovdiv-University-Projects\\C#\\HeroGame\\Exam\\Game\\Game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\source\\repos\\Exam\\Game\\Game.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\Repos\\Plovdiv-University-Projects\\C#\\HeroGame\\Exam\\Game\\Game.csproj",
         "projectName": "Game",
-        "projectPath": "C:\\Users\\DELL\\source\\repos\\Exam\\Game\\Game.csproj",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\Repos\\Plovdiv-University-Projects\\C#\\HeroGame\\Exam\\Game\\Game.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\source\\repos\\Exam\\Game\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\Repos\\Plovdiv-University-Projects\\C#\\HeroGame\\Exam\\Game\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

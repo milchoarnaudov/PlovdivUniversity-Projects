@@ -1,0 +1,13 @@
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Data\bin\Debug\netcoreapp3.1\AutoParts4Sale.Data.deps.json
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Data\bin\Debug\netcoreapp3.1\AutoParts4Sale.Data.dll
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Data\obj\Debug\netcoreapp3.1\AutoParts4Sale.Data.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Data\obj\Debug\netcoreapp3.1\AutoParts4Sale.Data.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Data\obj\Debug\netcoreapp3.1\AutoParts4Sale.Data.AssemblyInfo.cs
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Data\bin\Debug\netcoreapp3.1\AutoParts4Sale.Data.runtimeconfig.json
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Data\bin\Debug\netcoreapp3.1\AutoParts4Sale.Data.runtimeconfig.dev.json
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Data\bin\Debug\netcoreapp3.1\AutoParts4Sale.Core.dll
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Data\bin\Debug\netcoreapp3.1\AutoParts4Sale.Data.pdb
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Data\bin\Debug\netcoreapp3.1\AutoParts4Sale.Core.pdb
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Data\obj\Debug\netcoreapp3.1\AutoParts4Sale.Data.csproj.CopyComplete
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Data\obj\Debug\netcoreapp3.1\AutoParts4Sale.Data.dll
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Data\obj\Debug\netcoreapp3.1\AutoParts4Sale.Data.pdb

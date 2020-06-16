@@ -1,0 +1,4 @@
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Services\bin\Debug\netcoreapp3.1\AutoParts4Sale.Core.dll
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Services\obj\Debug\netcoreapp3.1\AutoParts4Sale.Services.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Services\obj\Debug\netcoreapp3.1\AutoParts4Sale.Services.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Services\obj\Debug\netcoreapp3.1\AutoParts4Sale.Services.AssemblyInfo.cs

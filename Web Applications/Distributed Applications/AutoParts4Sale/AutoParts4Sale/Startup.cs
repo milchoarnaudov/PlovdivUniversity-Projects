@@ -36,8 +36,7 @@ namespace AutoParts4Sale
             services.AddRazorPages()
                 .AddRazorPagesOptions(options =>
             {
-                options.Conventions.AuthorizeFolder("/Autoparts");
-                options.Conventions.AllowAnonymousToPage("/Autoparts/Index");
+                options.Conventions.AuthorizeFolder("/Autoparts").AllowAnonymousToPage("/Autoparts/Index");
             }); ;
         }
 

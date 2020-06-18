@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\Study\\Plovdiv-Uni\\Разпределени Приложения\\Project\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj": {}
+    "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\Study\\Plovdiv-Uni\\Разпределени Приложения\\Project\\AutoParts4Sale\\AutoParts4Sale.Core\\AutoParts4Sale.Core.csproj": {
+    "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Core\\AutoParts4Sale.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\Study\\Plovdiv-Uni\\Разпределени Приложения\\Project\\AutoParts4Sale\\AutoParts4Sale.Core\\AutoParts4Sale.Core.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Core\\AutoParts4Sale.Core.csproj",
         "projectName": "AutoParts4Sale.Core",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\Study\\Plovdiv-Uni\\Разпределени Приложения\\Project\\AutoParts4Sale\\AutoParts4Sale.Core\\AutoParts4Sale.Core.csproj",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Core\\AutoParts4Sale.Core.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\Study\\Plovdiv-Uni\\Разпределени Приложения\\Project\\AutoParts4Sale\\AutoParts4Sale.Core\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,18 +52,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\DELL\\Desktop\\Study\\Plovdiv-Uni\\Разпределени Приложения\\Project\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj": {
+    "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\Study\\Plovdiv-Uni\\Разпределени Приложения\\Project\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj",
         "projectName": "AutoParts4Sale.Data",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\Study\\Plovdiv-Uni\\Разпределени Приложения\\Project\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\Study\\Plovdiv-Uni\\Разпределени Приложения\\Project\\AutoParts4Sale\\AutoParts4Sale.Data\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -79,8 +79,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\DELL\\Desktop\\Study\\Plovdiv-Uni\\Разпределени Приложения\\Project\\AutoParts4Sale\\AutoParts4Sale.Core\\AutoParts4Sale.Core.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\Study\\Plovdiv-Uni\\Разпределени Приложения\\Project\\AutoParts4Sale\\AutoParts4Sale.Core\\AutoParts4Sale.Core.csproj"
+              "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Core\\AutoParts4Sale.Core.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Core\\AutoParts4Sale.Core.csproj"
               }
             }
           }
@@ -97,6 +97,10 @@
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -128,7 +132,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

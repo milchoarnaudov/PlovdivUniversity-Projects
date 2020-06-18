@@ -6,3 +6,12 @@ C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложе�
 C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Core\obj\Debug\netcoreapp3.1\AutoParts4Sale.Core.AssemblyInfo.cs
 C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Core\obj\Debug\netcoreapp3.1\AutoParts4Sale.Core.dll
 C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Core\obj\Debug\netcoreapp3.1\AutoParts4Sale.Core.pdb
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Core\bin\Debug\netcoreapp3.1\AutoParts4Sale.Core.deps.json
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Core\bin\Debug\netcoreapp3.1\AutoParts4Sale.Core.dll
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Core\bin\Debug\netcoreapp3.1\AutoParts4Sale.Core.pdb
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Core\obj\Debug\netcoreapp3.1\AutoParts4Sale.Core.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Core\obj\Debug\netcoreapp3.1\AutoParts4Sale.Core.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Core\obj\Debug\netcoreapp3.1\AutoParts4Sale.Core.AssemblyInfo.cs
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Core\obj\Debug\netcoreapp3.1\AutoParts4Sale.Core.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Core\obj\Debug\netcoreapp3.1\AutoParts4Sale.Core.dll
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Core\obj\Debug\netcoreapp3.1\AutoParts4Sale.Core.pdb

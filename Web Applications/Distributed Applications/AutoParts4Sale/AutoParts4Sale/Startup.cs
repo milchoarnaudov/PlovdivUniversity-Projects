@@ -33,7 +33,12 @@ namespace AutoParts4Sale
             });
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<AutoParts4SaleDbContexts>();
-            services.AddRazorPages();
+            services.AddRazorPages()
+                .AddRazorPagesOptions(options =>
+            {
+                options.Conventions.AuthorizeFolder("/Autoparts");
+                options.Conventions.AllowAnonymousToPage("/Autoparts/Index");
+            }); ;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

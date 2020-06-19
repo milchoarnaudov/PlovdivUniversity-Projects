@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using AutoParts4Sale.Core;
 using AutoParts4Sale.Data;
-using AutoParts4Sale.Data.Utils;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.EntityFrameworkCore;
 using AutoParts4Sale.Services.Implementation;

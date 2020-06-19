@@ -37,7 +37,7 @@ namespace AutoParts4Sale
                 .AddRazorPagesOptions(options =>
             {
                 options.Conventions.AuthorizeFolder("/Autoparts").AllowAnonymousToPage("/Autoparts/Index");
-            }); ;
+            }); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

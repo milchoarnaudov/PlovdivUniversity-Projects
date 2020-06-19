@@ -7,23 +7,26 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AutoParts4Sale.Core;
 using AutoParts4Sale.Data;
+using AutoParts4Sale.Services.Implementation;
 
 namespace AutoParts4Sale
 {
     public class IndexModel : PageModel
     {
-        private readonly AutoParts4Sale.Data.AutoParts4SaleDbContexts _context;
+        private readonly AutoParts4SaleDbContexts _context;
+        private readonly AutopartService autopartService;
 
-        public IndexModel(AutoParts4Sale.Data.AutoParts4SaleDbContexts context)
+        public IndexModel(AutoParts4SaleDbContexts context)
         {
+            autopartService = new AutopartService(context);
             _context = context;
         }
 
         public IList<Autopart> Autopart { get;set; }
 
-        public async Task OnGetAsync()
+        public void OnGet()
         {
-            Autopart = await _context.Autoparts.ToListAsync();
+            Autopart = autopartService.GetAll();
         }
     }
 }

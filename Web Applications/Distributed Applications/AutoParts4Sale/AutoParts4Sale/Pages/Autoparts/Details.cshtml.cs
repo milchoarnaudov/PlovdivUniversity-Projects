@@ -7,33 +7,37 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AutoParts4Sale.Core;
 using AutoParts4Sale.Data;
+using AutoParts4Sale.Services.Implementation;
 
 namespace AutoParts4Sale
 {
     public class DetailsModel : PageModel
     {
-        private readonly AutoParts4Sale.Data.AutoParts4SaleDbContexts _context;
-
-        public DetailsModel(AutoParts4Sale.Data.AutoParts4SaleDbContexts context)
-        {
-            _context = context;
-        }
-
+        private readonly AutopartService autopartService;
         public Autopart Autopart { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public DetailsModel(AutoParts4SaleDbContexts context)
+        {
+            autopartService = new AutopartService(context);
+        }
+
+
+        public IActionResult OnGet(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            Autopart = await _context.Autoparts.FirstOrDefaultAsync(m => m.Id == id);
+            int _id = (int)id;
+
+            Autopart = autopartService.GetById(_id);
 
             if (Autopart == null)
             {
                 return NotFound();
             }
+
             return Page();
         }
     }

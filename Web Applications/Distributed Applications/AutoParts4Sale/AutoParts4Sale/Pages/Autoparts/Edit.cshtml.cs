@@ -8,29 +8,34 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AutoParts4Sale.Core;
 using AutoParts4Sale.Data;
+using AutoParts4Sale.Services.Implementation;
 
 namespace AutoParts4Sale
 {
     public class EditModel : PageModel
     {
-        private readonly AutoParts4Sale.Data.AutoParts4SaleDbContexts _context;
+        private readonly AutoParts4SaleDbContexts _context;
+        private readonly AutopartService autopartService;
 
-        public EditModel(AutoParts4Sale.Data.AutoParts4SaleDbContexts context)
+        public EditModel(AutoParts4SaleDbContexts context)
         {
+            autopartService = new AutopartService(context);
             _context = context;
         }
 
         [BindProperty]
         public Autopart Autopart { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public IActionResult OnGet(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            Autopart = await _context.Autoparts.FirstOrDefaultAsync(m => m.Id == id);
+            int _id = (int)id;
+
+            Autopart = autopartService.GetById(_id);
 
             if (Autopart == null)
             {
@@ -41,22 +46,22 @@ namespace AutoParts4Sale
 
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://aka.ms/RazorPagesCRUD.
-        public async Task<IActionResult> OnPostAsync()
+        public IActionResult OnPost()
         {
             if (!ModelState.IsValid)
             {
                 return Page();
             }
 
-            _context.Attach(Autopart).State = EntityState.Modified;
+            autopartService.Update(Autopart);
 
             try
             {
-                await _context.SaveChangesAsync();
+               _context.SaveChangesAsync();
             }
-            catch (DbUpdateConcurrencyException)
+            catch (DbUpdateException)
             {
-                if (!AutopartExists(Autopart.Id))
+                if (!autopartService.AutopartExists(Autopart.Id))
                 {
                     return NotFound();
                 }
@@ -69,9 +74,6 @@ namespace AutoParts4Sale
             return RedirectToPage("./Index");
         }
 
-        private bool AutopartExists(int id)
-        {
-            return _context.Autoparts.Any(e => e.Id == id);
-        }
+        
     }
 }

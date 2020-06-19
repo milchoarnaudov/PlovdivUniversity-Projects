@@ -383,3 +383,6 @@ C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Application
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\AutoParts4Sale.Services.dll
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\AutoParts4Sale.Services.pdb
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\nunit.framework.dll

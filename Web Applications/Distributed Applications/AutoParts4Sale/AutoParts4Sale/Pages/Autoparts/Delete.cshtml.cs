@@ -7,29 +7,32 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AutoParts4Sale.Core;
 using AutoParts4Sale.Data;
+using AutoParts4Sale.Services.Implementation;
 
 namespace AutoParts4Sale
 {
     public class DeleteModel : PageModel
     {
-        private readonly AutoParts4Sale.Data.AutoParts4SaleDbContexts _context;
+        private readonly AutopartService autopartService;
 
-        public DeleteModel(AutoParts4Sale.Data.AutoParts4SaleDbContexts context)
+        public DeleteModel(AutoParts4SaleDbContexts context)
         {
-            _context = context;
+            autopartService = new AutopartService(context);
         }
 
         [BindProperty]
         public Autopart Autopart { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public IActionResult OnGet(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            Autopart = await _context.Autoparts.FirstOrDefaultAsync(m => m.Id == id);
+            int _id = (int)id;
+
+            Autopart = autopartService.GetById(_id);
 
             if (Autopart == null)
             {
@@ -38,19 +41,20 @@ namespace AutoParts4Sale
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(int? id)
+        public IActionResult OnPost(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            Autopart = await _context.Autoparts.FindAsync(id);
+            int _id = (int)id;
 
-            if (Autopart != null)
+            Autopart = autopartService.Delete(_id);
+
+            if (Autopart == null)
             {
-                _context.Autoparts.Remove(Autopart);
-                await _context.SaveChangesAsync();
+                return NotFound();
             }
 
             return RedirectToPage("./Index");

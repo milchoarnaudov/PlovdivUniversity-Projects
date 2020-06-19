@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Services\\AutoParts4Sale.Services.csproj": {
+    "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Services\\AutoParts4Sale.Services.csproj",
-        "projectName": "AutoParts4Sale.Services",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Services\\AutoParts4Sale.Services.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj",
+        "projectName": "AutoParts4Sale.Data",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Services\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -94,9 +94,92 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Relational": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Services\\AutoParts4Sale.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Services\\AutoParts4Sale.Services.csproj",
+        "projectName": "AutoParts4Sale.Services",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Services\\AutoParts4Sale.Services.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Core\\AutoParts4Sale.Core.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Core\\AutoParts4Sale.Core.csproj"
+              },
+              "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
             }
           },
           "imports": [

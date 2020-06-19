@@ -17,8 +17,7 @@ namespace AutoParts4Sale.Data
         }
 
         public DbSet<Category> Categories { get; set; }
-        //public DbSet<Car> Cars { get; set; }
-        //public DbSet<ModelCar> ModelsCars { get; set; }
+        public DbSet<CarMake> CarMakes { get; set; }
         public DbSet<Autopart> Autoparts { get; set; }
     }
 }

@@ -1,4 +1,17 @@
-C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Services\bin\Debug\netcoreapp3.1\AutoParts4Sale.Core.dll
-C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Services\obj\Debug\netcoreapp3.1\AutoParts4Sale.Services.csprojAssemblyReference.cache
-C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Services\obj\Debug\netcoreapp3.1\AutoParts4Sale.Services.AssemblyInfoInputs.cache
-C:\Users\DELL\Desktop\Study\Plovdiv-Uni\Разпределени Приложения\Project\AutoParts4Sale\AutoParts4Sale.Services\obj\Debug\netcoreapp3.1\AutoParts4Sale.Services.AssemblyInfo.cs
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\bin\Debug\netcoreapp3.1\AutoParts4Sale.Services.deps.json
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\bin\Debug\netcoreapp3.1\AutoParts4Sale.Services.runtimeconfig.json
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\bin\Debug\netcoreapp3.1\AutoParts4Sale.Services.runtimeconfig.dev.json
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\bin\Debug\netcoreapp3.1\AutoParts4Sale.Services.dll
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\bin\Debug\netcoreapp3.1\AutoParts4Sale.Services.pdb
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\bin\Debug\netcoreapp3.1\AutoParts4Sale.Core.dll
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\bin\Debug\netcoreapp3.1\AutoParts4Sale.Data.dll
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\bin\Debug\netcoreapp3.1\AutoParts4Sale.Core.pdb
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\bin\Debug\netcoreapp3.1\AutoParts4Sale.Data.pdb
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\obj\Debug\netcoreapp3.1\AutoParts4Sale.Services.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\obj\Debug\netcoreapp3.1\AutoParts4Sale.Services.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\obj\Debug\netcoreapp3.1\AutoParts4Sale.Services.AssemblyInfo.cs
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\obj\Debug\netcoreapp3.1\AutoParts4Sale.Services.csproj.CopyComplete
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\obj\Debug\netcoreapp3.1\AutoParts4Sale.Services.dll
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\obj\Debug\netcoreapp3.1\AutoParts4Sale.Services.pdb
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\obj\Debug\netcoreapp3.1\AutoParts4Sale.Services.genruntimeconfig.cache
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale.Services\obj\Debug\netcoreapp3.1\AutoParts4Sale.Services.csproj.CoreCompileInputs.cache

@@ -55,23 +55,7 @@ namespace AutoParts4Sale
 
             autopartService.Update(Autopart);
 
-            try
-            {
-               _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                if (!autopartService.AutopartExists(Autopart.Id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return RedirectToPage("./Index");
+            return RedirectToPage("/Autoparts/SuccessMessage");
         }
 
         

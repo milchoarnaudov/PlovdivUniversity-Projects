@@ -4,14 +4,16 @@ using AutoParts4Sale.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AutoParts4Sale.Data.Migrations
 {
     [DbContext(typeof(AutoParts4SaleDbContexts))]
-    partial class AutoParts4SaleDbContextsModelSnapshot : ModelSnapshot
+    [Migration("20200620002106_carMakeChanges")]
+    partial class carMakeChanges
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

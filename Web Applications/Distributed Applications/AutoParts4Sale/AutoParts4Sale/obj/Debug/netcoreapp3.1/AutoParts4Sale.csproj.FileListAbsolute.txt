@@ -386,3 +386,5 @@ C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Application
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\AutoParts4Sale.Services.dll
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\AutoParts4Sale.Services.pdb
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\nunit.framework.dll
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Autoparts\PopulateDb.cshtml.g.cs
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Distributed Applications\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Autoparts\SuccessMessage.cshtml.g.cs

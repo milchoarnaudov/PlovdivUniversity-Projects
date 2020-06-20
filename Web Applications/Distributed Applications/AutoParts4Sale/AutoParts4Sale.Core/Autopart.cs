@@ -10,6 +10,7 @@ namespace AutoParts4Sale.Core
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
+        [Required]
         public decimal Price { get; set; }
         public CarMake CarMake{ get; set; }
         public CarModel CarModel { get; set; }

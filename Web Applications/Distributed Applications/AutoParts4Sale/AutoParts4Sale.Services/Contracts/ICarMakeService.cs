@@ -9,7 +9,6 @@ namespace AutoParts4Sale.Services.Contracts
     {
         List<CarMake> GetAll();
         CarMake GetById(int id);
-        CarMake Update(CarMake updatedCarMake);
-        CarMake Add(CarMake car);
+
     }
 }

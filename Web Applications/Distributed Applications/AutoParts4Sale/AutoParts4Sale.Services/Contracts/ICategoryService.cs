@@ -9,9 +9,5 @@ namespace AutoParts4Sale.Services.Contracts
     {
         List<Category> GetAll();
         Category GetById(int id);
-        Category Update(Category updatedCategory);
-        Category Add(Category category);
-        Category Delete(int id);
-        int Commit();
     }
 }

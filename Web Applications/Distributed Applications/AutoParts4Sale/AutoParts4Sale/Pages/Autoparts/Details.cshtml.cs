@@ -15,7 +15,6 @@ namespace AutoParts4Sale
     {
         private readonly AutopartService autopartService;
         public Autopart Autopart { get; set; }
-
         public DetailsModel(AutoParts4SaleDbContexts context)
         {
             autopartService = new AutopartService(context);

@@ -18,12 +18,19 @@ namespace AutoParts4Sale.Services.Implementation
             _context = context;
         }
 
-        public Autopart Add(Autopart autopart, int carMakeId)
+        public Autopart Add(Autopart autopart, int carMakeId, int carModelId, int categoryId)
         {
             CarMake carMake = _context.CarMakes.Find(carMakeId);
+            CarModel carModel = _context.CarModels.Find(carModelId);
+            Category category = _context.Categories.Find(categoryId);
+
             autopart.CarMake = carMake;
+            autopart.CarModel = carModel;
+            autopart.Category = category;
+
             _context.Autoparts.Add(autopart);
             _context.SaveChanges();
+
             return autopart;
         }
 
@@ -55,6 +62,7 @@ namespace AutoParts4Sale.Services.Implementation
         {
             var entity = _context.Autoparts.Attach(updatedAutopart);
             entity.State = EntityState.Modified;
+            _context.SaveChanges();
             return updatedAutopart;
         }
 

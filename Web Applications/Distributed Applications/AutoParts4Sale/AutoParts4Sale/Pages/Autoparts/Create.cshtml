@@ -29,7 +29,12 @@
                 </select>
                 <span asp-validation-for="CarMakeId" class="text-danger"></span>
             </div>
-            
+            <div class="form-group">
+                <label asp-for="Autopart.Category" class="control-label">Choose Auto Part Category</label>
+                <select class="form-group" asp-for="CategoryId" asp-items="Model.Categories">
+                </select>
+                <span asp-validation-for="CarMakeId" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
@@ -41,6 +46,9 @@
     <a asp-page="Index">Back to List</a>
 </div>
 
+<div>
+    <a asp-page="PopulateDb">PopulateDB</a>
+</div>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

@@ -13,13 +13,11 @@ namespace AutoParts4Sale
 {
     public class IndexModel : PageModel
     {
-        private readonly AutoParts4SaleDbContexts _context;
         private readonly AutopartService autopartService;
 
         public IndexModel(AutoParts4SaleDbContexts context)
         {
             autopartService = new AutopartService(context);
-            _context = context;
         }
 
         public IList<Autopart> Autopart { get;set; }

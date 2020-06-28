@@ -9,6 +9,7 @@ namespace AutoParts4Sale.Core
     {
         public int Id { get; set; }
         [Required]
+        [StringLength(300)]
         public string Name { get; set; }
         [Required]
         public decimal Price { get; set; }

@@ -5,33 +5,14 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
-
 <div>
-    <h4>Article</h4>
     <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Article.Name)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Article.Name)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Article.Summary)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Article.Summary)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Article.Content)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Article.Content)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-page="./Edit" asp-route-id="@Model.Article.Id">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+    <h1 class="text-center">@Model.Article.Name</h1>
+    <h3 class="text-center"><em>@Model.Article.Summary</em></h3>
+    <div>
+        <a class="btn btn-lg" asp-page="./Edit" asp-route-id="@Model.Article.Id"><i class="fa fa-edit"></i></a> |
+        <a class="btn btn-lg" asp-page="./Index"><i class="fas fa-arrow-left"></i></a>
+    </div>
+    <br /> <hr />
+    <p class="mb-0">@Model.Article.Content</p>
 </div>

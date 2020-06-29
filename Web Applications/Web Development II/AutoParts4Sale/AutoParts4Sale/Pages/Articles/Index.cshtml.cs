@@ -19,11 +19,11 @@ namespace AutoParts4Sale.Pages.Articles
             articleService = new ArticleService(context);
         }
 
-        public IList<Article> Article { get;set; }
+        public IList<Article> Articles { get;set; }
 
         public void OnGet()
         {
-            Article = articleService.GetAll();
+            Articles = articleService.GetAll();
         }
     }
 }

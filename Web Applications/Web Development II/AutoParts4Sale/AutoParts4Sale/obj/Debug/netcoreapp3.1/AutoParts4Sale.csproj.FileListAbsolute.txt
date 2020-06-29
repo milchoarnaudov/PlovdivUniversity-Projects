@@ -594,3 +594,5 @@ C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Application
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Articles\Edit.cshtml.g.cs
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Articles\Index.cshtml.g.cs
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Autoparts\_Autopart.cshtml.g.cs
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Articles\_Article.cshtml.g.cs
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Articles\SuccessMessage.cshtml.g.cs

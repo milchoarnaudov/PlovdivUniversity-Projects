@@ -53,7 +53,7 @@ namespace AutoParts4Sale.Pages.Articles
 
             articleService.Update(Article);
 
-            return RedirectToPage("/Autoparts/SuccessMessage");
+            return RedirectToPage("/Articles/SuccessMessage");
         }
     }
 }

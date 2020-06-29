@@ -20,11 +20,11 @@ namespace AutoParts4Sale
             autopartService = new AutopartService(context);
         }
 
-        public IList<Autopart> Autopart { get;set; }
+        public IList<Autopart> Autoparts { get;set; }
 
         public void OnGet()
         {
-            Autopart = autopartService.GetAll();
+            Autoparts = autopartService.GetAll();
         }
     }
 }

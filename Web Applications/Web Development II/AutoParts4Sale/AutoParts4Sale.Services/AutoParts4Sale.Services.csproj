@@ -4,9 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.12.0" />
-  </ItemGroup>
+ 
 
   <ItemGroup>
     <ProjectReference Include="..\AutoParts4Sale.Core\AutoParts4Sale.Core.csproj" />

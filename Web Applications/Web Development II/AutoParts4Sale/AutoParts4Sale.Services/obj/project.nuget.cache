@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lM0M1rdU20Bs6xglDG896+0nkwbVkyLV8D9nbuuuWbelmnp31CzotW4/ApTeAqaXy7WKgJohzs3f1PwEX3htLQ==",
+  "dgSpecHash": "TaJZ3+ltVtKpMlH4mBiNjBQjsnS8rvf0pcZjaCInna7bL2YvKwWCBLHlgyxrof5PncZNzP0OaW/4eaoeU0zi2w==",
   "success": true,
   "projectFilePath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Web Development II\\AutoParts4Sale\\AutoParts4Sale.Services\\AutoParts4Sale.Services.csproj",
   "expectedPackageFiles": [
@@ -35,8 +35,6 @@
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

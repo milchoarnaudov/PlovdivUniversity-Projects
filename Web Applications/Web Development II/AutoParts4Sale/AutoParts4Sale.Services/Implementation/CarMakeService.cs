@@ -1,7 +1,6 @@
 ﻿using AutoParts4Sale.Core;
 using AutoParts4Sale.Data;
 using AutoParts4Sale.Services.Contracts;
-using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

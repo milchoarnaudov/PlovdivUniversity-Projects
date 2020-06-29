@@ -453,7 +453,6 @@ C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Application
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
-C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\nunit.framework.dll
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll

@@ -587,3 +587,10 @@ C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Application
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\AutoParts4Sale.dll
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\AutoParts4Sale.pdb
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\AutoParts4Sale.genruntimeconfig.cache
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Articles\Create.cshtml.g.cs
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Articles\Delete.cshtml.g.cs
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Articles\Details.cshtml.g.cs
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Articles\Edit.cshtml.g.cs
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Articles\Index.cshtml.g.cs

@@ -30,9 +30,4 @@
     <ProjectReference Include="..\AutoParts4Sale.Services\AutoParts4Sale.Services.csproj" />
   </ItemGroup>
 
-
-  <ItemGroup>
-    <Folder Include="Pages\Articles\" />
-  </ItemGroup>
-
 </Project>

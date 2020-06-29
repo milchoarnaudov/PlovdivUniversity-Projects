@@ -7,7 +7,6 @@ namespace AutoParts4Sale.Services.Contracts
 {
     interface IAutopartService
     {
-
         List<Autopart> GetAll();
         Autopart GetById(int id);
         Autopart Update(Autopart updatedAutopart);

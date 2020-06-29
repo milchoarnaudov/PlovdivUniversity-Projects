@@ -20,16 +20,19 @@ namespace AutoParts4Sale.Services.Implementation
 
         public Autopart Add(Autopart autopart, int carMakeId, int carModelId, int categoryId)
         {
-            CarMake carMake = _context.CarMakes.Find(carMakeId);
-            CarModel carModel = _context.CarModels.Find(carModelId);
-            Category category = _context.Categories.Find(categoryId);
+            if(autopart != null)
+            {
+                CarMake carMake = _context.CarMakes.Find(carMakeId);
+                CarModel carModel = _context.CarModels.Find(carModelId);
+                Category category = _context.Categories.Find(categoryId);
 
-            autopart.CarMake = carMake;
-            autopart.CarModel = carModel;
-            autopart.Category = category;
+                autopart.CarMake = carMake;
+                autopart.CarModel = carModel;
+                autopart.Category = category;
 
-            _context.Autoparts.Add(autopart);
-            _context.SaveChanges();
+                _context.Autoparts.Add(autopart);
+                _context.SaveChanges();
+            }
 
             return autopart;
         }

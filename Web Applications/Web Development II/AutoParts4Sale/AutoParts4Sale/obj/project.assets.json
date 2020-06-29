@@ -7981,11 +7981,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale\\AutoParts4Sale.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Web Development II\\AutoParts4Sale\\AutoParts4Sale\\AutoParts4Sale.csproj",
       "projectName": "AutoParts4Sale",
-      "projectPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale\\AutoParts4Sale.csproj",
+      "projectPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Web Development II\\AutoParts4Sale\\AutoParts4Sale\\AutoParts4Sale.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale\\obj\\",
+      "outputPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Web Development II\\AutoParts4Sale\\AutoParts4Sale\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8001,11 +8001,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj": {
-              "projectPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj"
+            "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Web Development II\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Web Development II\\AutoParts4Sale\\AutoParts4Sale.Data\\AutoParts4Sale.Data.csproj"
             },
-            "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Services\\AutoParts4Sale.Services.csproj": {
-              "projectPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Services\\AutoParts4Sale.Services.csproj"
+            "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Web Development II\\AutoParts4Sale\\AutoParts4Sale.Services\\AutoParts4Sale.Services.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Web Development II\\AutoParts4Sale\\AutoParts4Sale.Services\\AutoParts4Sale.Services.csproj"
             }
           }
         }

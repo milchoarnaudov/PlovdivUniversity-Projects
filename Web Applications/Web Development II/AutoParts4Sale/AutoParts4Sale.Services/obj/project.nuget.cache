@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Cpi9cPzW0Jc6HWfWGxAY7G94aASTPM+KQOfuT4VmnJMsyCXLkgqPTaX5XhRKRunp52lTbXWZu/xoQXGSVnlFWQ==",
+  "dgSpecHash": "lM0M1rdU20Bs6xglDG896+0nkwbVkyLV8D9nbuuuWbelmnp31CzotW4/ApTeAqaXy7WKgJohzs3f1PwEX3htLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Distributed Applications\\AutoParts4Sale\\AutoParts4Sale.Services\\AutoParts4Sale.Services.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\Desktop\\GitHubProjects\\Plovdiv-University-Projects\\Web Applications\\Web Development II\\AutoParts4Sale\\AutoParts4Sale.Services\\AutoParts4Sale.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.5\\microsoft.aspnetcore.cryptography.internal.3.1.5.nupkg.sha512",

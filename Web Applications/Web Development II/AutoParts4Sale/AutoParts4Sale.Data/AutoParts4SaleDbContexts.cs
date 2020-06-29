@@ -13,11 +13,12 @@ namespace AutoParts4Sale.Data
         public AutoParts4SaleDbContexts(DbContextOptions<AutoParts4SaleDbContexts> options)
             : base(options)
         {
-
         }
+
         public DbSet<Autopart> Autoparts { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<CarMake> CarMakes { get; set; }
         public DbSet<CarModel> CarModels { get; set; }
+        public DbSet<Article> Articles { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Game.Models.Common;
+﻿using Game.Heroes;
+using Game.InputOutput;
 using System;
 using System.Threading;
 
@@ -9,12 +10,14 @@ namespace Game
         private Hero firstHero;
         private Hero secondHero;
         private int rounds;
+        private IIOEngine iOEngine;
 
-        public GameEngine(Hero firstHero, Hero secondHero)
+        public GameEngine(IIOEngine iOEngine, Hero firstHero, Hero secondHero)
         {
             this.firstHero = firstHero;
             this.secondHero = secondHero;
             this.rounds = 0;
+            this.iOEngine = iOEngine;
         }
 
         public void StartGame()
@@ -27,7 +30,7 @@ namespace Game
 
                 if (this.secondHero.HealthPoints <= 0)
                 {
-                    Console.WriteLine($"{this.firstHero.GetType().Name} wins");
+                    iOEngine.WriteLine($"{this.firstHero.GetType().Name} wins");
                     return;
                 }
 
@@ -35,40 +38,34 @@ namespace Game
 
                 if (this.firstHero.HealthPoints <= 0)
                 {
-                    Console.WriteLine($"{this.secondHero.GetType().Name} wins");
+                    iOEngine.WriteLine($"{this.secondHero.GetType().Name} wins");
                     return;
                 }
 
-                Console.WriteLine(this.firstHero);
-                Console.WriteLine(this.secondHero);
+                iOEngine.WriteLine(this.firstHero.ToString());
+                iOEngine.WriteLine(this.secondHero.ToString());
             }
         }
 
         private void PrintRounds()
         {
-            Console.ForegroundColor = ConsoleColor.Red;
             if (rounds == 0)
             {
-                Console.WriteLine(1);
+                iOEngine.WriteLine("1");
                 Thread.Sleep(1000);
-                Console.Clear();
 
-                Console.WriteLine(2);
+                iOEngine.WriteLine("2");
                 Thread.Sleep(1000);
-                Console.Clear();
 
-                Console.WriteLine(3);
+                iOEngine.WriteLine("3");
                 Thread.Sleep(1000);
-                Console.Clear();
 
-                Console.WriteLine("FIGHT");
+                iOEngine.WriteLine("FIGHT");
                 Thread.Sleep(1000);
-                Console.Clear();
             }
 
             rounds++;
-            Console.WriteLine($"Round: {rounds}");
-            Console.ResetColor();
+            iOEngine.WriteLine($"Round: {rounds}");
         }
     }
 }

@@ -4,12 +4,13 @@ using System.Text;
 
 namespace Game.Utility
 {
-    public static class ChanceDeterminator
+    public static class Helpers
     {
-        public static bool Determine(int chance)
+        public static bool DetermineChance(int chancePercentage)
         {
             Random rand = new Random();
-            if(rand.Next(0, 100) <= chance)
+
+            if(rand.Next(0, 100) <= chancePercentage)
             {
                 return true;
             }

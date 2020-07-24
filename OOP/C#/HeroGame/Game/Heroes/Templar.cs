@@ -1,18 +1,17 @@
-﻿using Game.Models.Common;
-using Game.Utility;
+﻿using Game.Utility;
 
 namespace Game.Heroes
 {
-    class Monk : Hero
+    class Templar : Hero
     {
-        public Monk(int healthPoints, int attackPoints, int armorPoints)
+        public Templar(int healthPoints, int attackPoints, int armorPoints)
             : base(healthPoints, attackPoints, armorPoints)
         {
         }
 
         public override void Defend(int attackPoints)
         {
-            if (!ChanceDeterminator.Determine(30))
+            if (!Helpers.DetermineChance(50))
             {
                 if (this.ArmorPoints <= 0)
                 {
@@ -22,7 +21,7 @@ namespace Game.Heroes
                 {
                     if (attackPoints > this.ArmorPoints)
                     {
-                        this.HealthPoints += attackPoints - this.ArmorPoints;
+                        this.HealthPoints += this.ArmorPoints - attackPoints;
                         this.ArmorPoints = 0;
                     }
                     else

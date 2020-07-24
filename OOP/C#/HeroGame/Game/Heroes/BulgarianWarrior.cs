@@ -1,8 +1,4 @@
-﻿using Game.Models.Common;
-using Game.Utility;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Game.Utility;
 
 namespace Game.Heroes
 {
@@ -15,7 +11,7 @@ namespace Game.Heroes
         }
         public override void Attack(Hero opponent)
         {
-            if (ChanceDeterminator.Determine(99))
+            if (Helpers.DetermineChance(99))
             {
                 opponent.Defend(this.AttackPoints * 2);
             }

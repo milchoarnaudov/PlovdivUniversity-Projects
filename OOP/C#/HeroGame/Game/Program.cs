@@ -1,4 +1,5 @@
 ﻿using Game.Heroes;
+using Game.InputOutput;
 using System;
 
 namespace Game
@@ -12,8 +13,8 @@ namespace Game
             var bulgarian = new BulgarianWarrior(100, 11, 100);
             var byzantine = new Byzantine(100, 20, 100);
 
-
-            GameEngine engine = new GameEngine(bulgarian, byzantine);
+            // Removed the dependency to the console with Dependency Injection
+            GameEngine engine = new GameEngine(new ConsoleIO(), bulgarian, byzantine);
             engine.StartGame();
         }
     }

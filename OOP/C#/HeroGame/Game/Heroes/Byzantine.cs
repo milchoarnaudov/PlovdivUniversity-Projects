@@ -1,8 +1,4 @@
-﻿using Game.Models.Common;
-using Game.Utility;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Game.Utility;
 
 namespace Game.Heroes
 {
@@ -15,7 +11,7 @@ namespace Game.Heroes
 
         public override void Defend(int attackPoints)
         {
-            if (ChanceDeterminator.Determine(40))
+            if (Helpers.DetermineChance(40))
             {
                 this.HealthPoints = 0;
             }

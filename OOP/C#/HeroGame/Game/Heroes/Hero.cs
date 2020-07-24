@@ -1,21 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Game.Models.Common
+namespace Game.Heroes
 {
     public abstract class Hero
     {
-        public int HealthPoints { get; protected set; }
-        public int AttackPoints { get; protected set; }
-        public int ArmorPoints { get; protected set; }
-
-        protected Hero(int healthPoints, int attackPoints, int armorPoints)
+        public Hero(int healthPoints, int attackPoints, int armorPoints)
         {
             HealthPoints = healthPoints;
             AttackPoints = attackPoints;
             ArmorPoints = armorPoints;
         }
+
+        public int HealthPoints { get; protected set; }
+        public int AttackPoints { get; protected set; }
+        public int ArmorPoints { get; protected set; }
 
         public virtual void Attack(Hero opponent)
         {

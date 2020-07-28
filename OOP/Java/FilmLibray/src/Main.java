@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 public class Main {
 
     public static void main(String[] args) {
-        List<Film> firstFilmLibrary = new ArrayList<>();
+        List<Film> firstFilmLibrary = new ArrayList<Film>();
         List<Film> secondFilmLibrary = new ArrayList<Film>();
         List<Film> thirdFilmLibrary = new ArrayList<Film>();
 

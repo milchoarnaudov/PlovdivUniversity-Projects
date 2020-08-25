@@ -1,9 +1,9 @@
 public class Film {
-    public String filmName;
-    public String[] mainRoles;
-    public String mainRole;
-    public int releaseDate;
-    public int licenseTax;
+    private String filmName;
+    private String[] mainRoles;
+    private String mainRole;
+    private int releaseDate;
+    private int licenseTax;
 
     public Film(String _filmName, String[] _mainRoles, int _releaseDate, int _licenseTax){
         this.filmName = _filmName;

@@ -41,3 +41,5 @@ C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Application
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale.Data\obj\Debug\netcoreapp3.1\AutoParts4Sale.Data.dll
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale.Data\obj\Debug\netcoreapp3.1\AutoParts4Sale.Data.pdb
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale.Data\obj\Debug\netcoreapp3.1\AutoParts4Sale.Data.genruntimeconfig.cache
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale.Data\bin\Debug\netcoreapp3.1\AutoParts4Sale.ContentManagement.dll
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale.Data\bin\Debug\netcoreapp3.1\AutoParts4Sale.ContentManagement.pdb

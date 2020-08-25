@@ -7,19 +7,19 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AutoParts4Sale.Core;
 using AutoParts4Sale.Data;
-using AutoParts4Sale.Services.Implementation;
+using AutoParts4Sale.Repository.Implementation;
 
 namespace AutoParts4Sale.Pages.Articles
 {
     public class IndexModel : PageModel
     {
-        private readonly ArticleService articleService;
-        public IndexModel(AutoParts4SaleDbContexts context)
+        private readonly ArticleRepository articleService;
+        public IndexModel(AutoParts4SaleDbContext context)
         {
-            articleService = new ArticleService(context);
+            articleService = new ArticleRepository(context);
         }
 
-        public IList<Article> Articles { get;set; }
+        public IEnumerable<Article> Articles { get;set; }
 
         public void OnGet()
         {

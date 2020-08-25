@@ -8,7 +8,6 @@ namespace AutoParts4Sale.Core
     public class CarMake
     {
         public int Id { get; set; }
-
         [Required]
         [Display(Name = "Car Make")]
         public string Name { get; set; }

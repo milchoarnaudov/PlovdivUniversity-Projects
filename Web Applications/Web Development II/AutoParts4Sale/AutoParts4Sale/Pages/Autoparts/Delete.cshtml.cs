@@ -7,17 +7,17 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AutoParts4Sale.Core;
 using AutoParts4Sale.Data;
-using AutoParts4Sale.Services.Implementation;
+using AutoParts4Sale.Repository.Implementation;
 
 namespace AutoParts4Sale
 {
     public class DeleteModel : PageModel
     {
-        private readonly AutopartService autopartService;
+        private readonly AutopartRepository autopartService;
 
-        public DeleteModel(AutoParts4SaleDbContexts context)
+        public DeleteModel(AutoParts4SaleDbContext context)
         {
-            autopartService = new AutopartService(context);
+            autopartService = new AutopartRepository(context);
         }
 
         [BindProperty]

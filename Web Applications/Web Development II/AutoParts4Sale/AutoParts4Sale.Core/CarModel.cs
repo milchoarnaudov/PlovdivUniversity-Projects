@@ -11,5 +11,7 @@ namespace AutoParts4Sale.Core
         [Required]
         [Display(Name = "Car Model")]
         public string Name { get; set; }
+        public int CarMakeId { get; set; }
+        public CarMake CarMake { get; set; }
     }
 }

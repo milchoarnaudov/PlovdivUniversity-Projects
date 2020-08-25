@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "AutoParts4Sale.ContentManagement/1.0.0": {
+        "dependencies": {
+          "AutoParts4Sale.Core": "1.0.0"
+        },
+        "runtime": {
+          "AutoParts4Sale.ContentManagement.dll": {}
+        }
+      },
+      "AutoParts4Sale.Core/1.0.0": {
+        "runtime": {
+          "AutoParts4Sale.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AutoParts4Sale.ContentManagement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AutoParts4Sale.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

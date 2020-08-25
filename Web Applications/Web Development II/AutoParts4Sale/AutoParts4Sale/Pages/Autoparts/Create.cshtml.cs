@@ -9,15 +9,16 @@ using AutoParts4Sale.Core;
 using AutoParts4Sale.Data;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.EntityFrameworkCore;
-using AutoParts4Sale.Services.Implementation;
+using AutoParts4Sale.Repository.Implementation;
 
 namespace AutoParts4Sale
 {
     public class CreateModel : PageModel
     {
-        private readonly AutopartService autopartService;
-        private readonly CarMakeService carMakeService;
-        private readonly CategoryService categoryService;
+        private readonly AutopartRepository autopartService;
+        private readonly CarMakeRepository carMakeService;
+        private readonly CategoryRepository categoryService;
+        private readonly CarModelRepository carModelRepository;
 
         [BindProperty]
         public Autopart Autopart { get; set; }
@@ -33,11 +34,12 @@ namespace AutoParts4Sale
         public SelectList CarModels { get; set; }
         public SelectList Categories { get; set; }
 
-        public CreateModel(AutoParts4SaleDbContexts context)
+        public CreateModel(AutoParts4SaleDbContext context)
         {
-            carMakeService = new CarMakeService(context);
-            autopartService = new AutopartService(context);
-            categoryService = new CategoryService(context);
+            carMakeService = new CarMakeRepository(context);
+            autopartService = new AutopartRepository(context);
+            categoryService = new CategoryRepository(context);
+            carModelRepository = new CarModelRepository(context);
         }
 
         public IActionResult OnGet()
@@ -58,7 +60,16 @@ namespace AutoParts4Sale
                 return Page();
             }
 
-            autopartService.Add(Autopart, CarMakeId, CarModelId, CategoryId);
+            if (Autopart != null)
+            {
+                CarMake carMake = carMakeService.GetById(CarMakeId);
+                Category category = categoryService.GetById(CategoryId);
+
+                Autopart.CarMake = carMake;
+                Autopart.Category = category;
+            }
+
+            autopartService.Add(Autopart);
 
             return RedirectToPage("./Index");
         }

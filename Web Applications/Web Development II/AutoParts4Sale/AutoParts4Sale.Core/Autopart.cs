@@ -13,8 +13,9 @@ namespace AutoParts4Sale.Core
         public string Name { get; set; }
         [Required]
         public decimal Price { get; set; }
+        public int CarMakeId { get; set; }
         public CarMake CarMake{ get; set; }
-        public CarModel CarModel { get; set; }
+        public int CategoryId { get; set; }
         public Category Category { get; set; }
         public DateTime DateAdded { get; set; }
         public DateTime ModifiedDate { get; set; }

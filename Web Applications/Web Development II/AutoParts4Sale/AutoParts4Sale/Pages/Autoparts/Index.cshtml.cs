@@ -1,26 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
 using AutoParts4Sale.Core;
 using AutoParts4Sale.Data;
-using AutoParts4Sale.Services.Implementation;
+using AutoParts4Sale.Repository.Implementation;
 
 namespace AutoParts4Sale
 {
     public class IndexModel : PageModel
     {
-        private readonly AutopartService autopartService;
+        private readonly AutopartRepository autopartService;
 
-        public IndexModel(AutoParts4SaleDbContexts context)
+        public IndexModel(AutoParts4SaleDbContext context)
         {
-            autopartService = new AutopartService(context);
+            autopartService = new AutopartRepository(context);
         }
 
-        public IList<Autopart> Autoparts { get;set; }
+        public IEnumerable<Autopart> Autoparts { get;set; }
 
         public void OnGet()
         {

@@ -8,17 +8,17 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AutoParts4Sale.Core;
 using AutoParts4Sale.Data;
-using AutoParts4Sale.Services.Implementation;
+using AutoParts4Sale.Repository.Implementation;
 
 namespace AutoParts4Sale.Pages.Articles
 {
     public class EditModel : PageModel
     {
-        private readonly ArticleService articleService;
+        private readonly ArticleRepository articleService;
 
-        public EditModel(AutoParts4SaleDbContexts context)
+        public EditModel(AutoParts4SaleDbContext context)
         {
-            articleService = new ArticleService(context);
+            articleService = new ArticleRepository(context);
         }
 
         [BindProperty]

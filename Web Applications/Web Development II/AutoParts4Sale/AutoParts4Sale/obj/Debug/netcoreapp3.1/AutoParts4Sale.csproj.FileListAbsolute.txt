@@ -546,9 +546,7 @@ C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Application
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\AutoParts4Sale.Core.dll
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\AutoParts4Sale.Data.dll
-C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\AutoParts4Sale.Services.dll
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\AutoParts4Sale.Data.pdb
-C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\AutoParts4Sale.Services.pdb
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\AutoParts4Sale.Core.pdb
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\AutoParts4Sale.csprojAssemblyReference.cache
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\AutoParts4Sale.AssemblyInfoInputs.cache
@@ -567,7 +565,6 @@ C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Application
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Autoparts\Details.cshtml.g.cs
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Autoparts\Edit.cshtml.g.cs
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Autoparts\Index.cshtml.g.cs
-C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Autoparts\PopulateDb.cshtml.g.cs
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Autoparts\SuccessMessage.cshtml.g.cs
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
@@ -596,3 +593,7 @@ C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Application
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Autoparts\_Autopart.cshtml.g.cs
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Articles\_Article.cshtml.g.cs
 C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\obj\Debug\netcoreapp3.1\Razor\Pages\Articles\SuccessMessage.cshtml.g.cs
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\AutoParts4Sale.Repository.dll
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\AutoParts4Sale.Repository.pdb
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\AutoParts4Sale.ContentManagement.dll
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\Web Applications\Web Development II\AutoParts4Sale\AutoParts4Sale\bin\Debug\netcoreapp3.1\AutoParts4Sale.ContentManagement.pdb

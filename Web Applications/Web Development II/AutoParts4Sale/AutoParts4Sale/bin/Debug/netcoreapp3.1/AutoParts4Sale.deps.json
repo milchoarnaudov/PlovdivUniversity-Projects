@@ -25,7 +25,7 @@
       "AutoParts4Sale/1.0.0": {
         "dependencies": {
           "AutoParts4Sale.Data": "1.0.0",
-          "AutoParts4Sale.Services": "1.0.0",
+          "AutoParts4Sale.Repository": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.5",
           "Microsoft.AspNetCore.Identity.UI": "3.1.5",
@@ -2528,6 +2528,17 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "AutoParts4Sale.ContentManagement/1.0.0": {
+        "dependencies": {
+          "AutoParts4Sale.Core": "1.0.0"
+        },
+        "runtime": {
+          "AutoParts4Sale.ContentManagement.dll": {}
+        },
+        "compile": {
+          "AutoParts4Sale.ContentManagement.dll": {}
+        }
+      },
       "AutoParts4Sale.Core/1.0.0": {
         "runtime": {
           "AutoParts4Sale.Core.dll": {}
@@ -2538,6 +2549,7 @@
       },
       "AutoParts4Sale.Data/1.0.0": {
         "dependencies": {
+          "AutoParts4Sale.ContentManagement": "1.0.0",
           "AutoParts4Sale.Core": "1.0.0",
           "EntityFramework": "6.4.4",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.5",
@@ -2551,16 +2563,16 @@
           "AutoParts4Sale.Data.dll": {}
         }
       },
-      "AutoParts4Sale.Services/1.0.0": {
+      "AutoParts4Sale.Repository/1.0.0": {
         "dependencies": {
           "AutoParts4Sale.Core": "1.0.0",
           "AutoParts4Sale.Data": "1.0.0"
         },
         "runtime": {
-          "AutoParts4Sale.Services.dll": {}
+          "AutoParts4Sale.Repository.dll": {}
         },
         "compile": {
-          "AutoParts4Sale.Services.dll": {}
+          "AutoParts4Sale.Repository.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -5389,6 +5401,11 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
+    "AutoParts4Sale.ContentManagement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "AutoParts4Sale.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -5399,7 +5416,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "AutoParts4Sale.Services/1.0.0": {
+    "AutoParts4Sale.Repository/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

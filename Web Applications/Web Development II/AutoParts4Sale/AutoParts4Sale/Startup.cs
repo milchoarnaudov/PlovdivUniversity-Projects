@@ -27,12 +27,12 @@ namespace AutoParts4Sale
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContextPool<AutoParts4SaleDbContexts>(options =>
+            services.AddDbContextPool<AutoParts4SaleDbContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("AutoParts4Sale"));
             });
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<AutoParts4SaleDbContexts>();
+                .AddEntityFrameworkStores<AutoParts4SaleDbContext>();
             services.AddRazorPages()
                 .AddRazorPagesOptions(options =>
             {

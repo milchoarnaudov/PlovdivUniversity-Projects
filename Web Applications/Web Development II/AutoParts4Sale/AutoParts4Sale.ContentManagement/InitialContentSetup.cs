@@ -102,49 +102,55 @@ namespace AutoParts4Sale.ContentManagement
                     {
                         Id = 7,
                         Name = "3 Series",
-                        CarMakeId = 3
+                        CarMakeId = 2
                     },
                     new CarModel
                     {
                         Id = 8,
                         Name = "5 Series",
-                        CarMakeId = 3
+                        CarMakeId = 2
                     },
                     new CarModel
                     {
                         Id = 9,
                         Name = "7 Series",
-                        CarMakeId = 3
+                        CarMakeId = 2
                     },
                     new CarModel
                     {
                         Id = 10,
                         Name = "8 Series",
-                        CarMakeId = 3
+                        CarMakeId = 2
                     },
                     new CarModel
                     {
                         Id = 11,
                         Name = "G class",
-                        CarMakeId = 2
+                        CarMakeId = 3
                     },
                     new CarModel
                     {
                         Id = 12,
                         Name = "S class",
-                        CarMakeId = 2
+                        CarMakeId = 3
                     },
                     new CarModel
                     {
                         Id = 13,
                         Name = "C class",
-                        CarMakeId = 2
+                        CarMakeId = 3
                     },
                     new CarModel
                     {
                         Id = 14,
                         Name = "A class",
-                        CarMakeId = 2
+                        CarMakeId = 3
+                    },
+                    new CarModel
+                    {
+                        Id = 15,
+                        Name = "E class",
+                        CarMakeId = 3
                     }
                 };
 

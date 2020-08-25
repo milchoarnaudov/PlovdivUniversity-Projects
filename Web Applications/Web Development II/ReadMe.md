@@ -1,1 +1,1 @@
-The requirement is to make a ASP.NET Core Web Application.
+The project is from my Web Development II exam.

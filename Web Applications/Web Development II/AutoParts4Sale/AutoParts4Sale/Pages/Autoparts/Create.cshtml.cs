@@ -15,15 +15,14 @@ namespace AutoParts4Sale
 {
     public class CreateModel : PageModel
     {
-        private readonly AutopartRepository autopartService;
-        private readonly CarMakeRepository carMakeService;
-        private readonly CategoryRepository categoryService;
+        private readonly AutopartRepository autopartRepository;
+        private readonly CarMakeRepository carMakeRepository;
+        private readonly CategoryRepository categoryRepository;
         private readonly CarModelRepository carModelRepository;
 
         [BindProperty]
         public Autopart Autopart { get; set; }
-
-        [BindProperty]
+        [BindProperty(SupportsGet = true)]
         public int CarMakeId { get; set; }
         [BindProperty]
         public int CarModelId { get; set; }
@@ -36,20 +35,25 @@ namespace AutoParts4Sale
 
         public CreateModel(AutoParts4SaleDbContext context)
         {
-            carMakeService = new CarMakeRepository(context);
-            autopartService = new AutopartRepository(context);
-            categoryService = new CategoryRepository(context);
+            carMakeRepository = new CarMakeRepository(context);
+            autopartRepository = new AutopartRepository(context);
+            categoryRepository = new CategoryRepository(context);
             carModelRepository = new CarModelRepository(context);
         }
 
         public IActionResult OnGet()
         {
-            CarMakes = new SelectList(carMakeService.GetAll(), nameof(CarMake.Id), nameof(CarMake.Name));
-            Categories = new SelectList(categoryService.GetAll(), nameof(CarMake.Id), nameof(CarMake.Name));
-            //CarModels = new SelectList(carMakeService.GetById(CarMakeId).CarModels, nameof(CarMake.Id), nameof(CarMake.Name));
+            CarMakes = new SelectList(carMakeRepository.GetAll(), nameof(CarMake.Id), nameof(CarMake.Name));
+            Categories = new SelectList(categoryRepository.GetAll(), nameof(Category.Id), nameof(Category.Name));
+            CarModels = new SelectList(carModelRepository.GetAll().Where(cm => cm.CarMakeId == CarMakeId), nameof(CarModel.Id), nameof(CarModel.Name));
+           
             return Page();
         }
 
+        public JsonResult OnGetSubCategories()
+        {
+            return new JsonResult(carModelRepository.GetAll().Where(cm => cm.CarMakeId == CarMakeId));
+        }
 
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://aka.ms/RazorPagesCRUD.
@@ -62,14 +66,14 @@ namespace AutoParts4Sale
 
             if (Autopart != null)
             {
-                CarMake carMake = carMakeService.GetById(CarMakeId);
-                Category category = categoryService.GetById(CategoryId);
+                CarMake carMake = carMakeRepository.GetById(CarMakeId);
+                Category category = categoryRepository.GetById(CategoryId);
 
                 Autopart.CarMake = carMake;
                 Autopart.Category = category;
             }
 
-            autopartService.Add(Autopart);
+            autopartRepository.Add(Autopart);
 
             return RedirectToPage("./Index");
         }

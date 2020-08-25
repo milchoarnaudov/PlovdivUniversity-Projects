@@ -170,50 +170,56 @@ namespace AutoParts4Sale.Data.Migrations
                         new
                         {
                             Id = 7,
-                            CarMakeId = 3,
+                            CarMakeId = 2,
                             Name = "3 Series"
                         },
                         new
                         {
                             Id = 8,
-                            CarMakeId = 3,
+                            CarMakeId = 2,
                             Name = "5 Series"
                         },
                         new
                         {
                             Id = 9,
-                            CarMakeId = 3,
+                            CarMakeId = 2,
                             Name = "7 Series"
                         },
                         new
                         {
                             Id = 10,
-                            CarMakeId = 3,
+                            CarMakeId = 2,
                             Name = "8 Series"
                         },
                         new
                         {
                             Id = 11,
-                            CarMakeId = 2,
+                            CarMakeId = 3,
                             Name = "G class"
                         },
                         new
                         {
                             Id = 12,
-                            CarMakeId = 2,
+                            CarMakeId = 3,
                             Name = "S class"
                         },
                         new
                         {
                             Id = 13,
-                            CarMakeId = 2,
+                            CarMakeId = 3,
                             Name = "C class"
                         },
                         new
                         {
                             Id = 14,
-                            CarMakeId = 2,
+                            CarMakeId = 3,
                             Name = "A class"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CarMakeId = 3,
+                            Name = "E class"
                         });
                 });
 

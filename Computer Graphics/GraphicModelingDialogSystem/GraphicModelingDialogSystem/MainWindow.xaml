@@ -6,7 +6,42 @@
         xmlns:local="clr-namespace:GraphicModelingDialogSystem"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <StackPanel>
+        <Menu Height="20">
+            <MenuItem Header="File"  >
+                <MenuItem Header="New"></MenuItem>
+                <MenuItem Header="Open"></MenuItem>
+                <MenuItem Header="Save"></MenuItem>
+                <MenuItem Header="Save As"></MenuItem>
+                <MenuItem Header="Close" Click="Close_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Settings"></MenuItem>
+            <MenuItem Header="About">
+                <MenuItem Header="About Me" Click="AboutMe_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <ToolBar Name="DrawingTools" DockPanel.Dock="Top" Height="25">
+            <RadioButton x:Name="LineButton" 
+                         Click="LineButton_Click" 
+                         Background="LightGray" 
+                         Content="Line" Height="50" Width="80"
+                         IsChecked="True"/>
+            <RadioButton x:Name="EllipseButton" 
+                         Click="EllipseButton_Click"
+                         Background="LightGray"
+                         Content="Ellipse" Height="50" Width="80"/>
+            <RadioButton x:Name="RectangleButton" 
+                         Click="RectangleButton_Click"
+                         Background="LightGray" 
+                         Content="Rectangle" Height="50" Width="80"/>
+            <RadioButton x:Name="PenButton"
+                         Click="PenButton_Click"
+                         Background="LightGray" 
+                         Content="Pen" Height="50" Width="80"/>
+        </ToolBar>
         
-    </Grid>
+        <Canvas x:Name="Sheet">
+            
+        </Canvas>
+    </StackPanel>
 </Window>

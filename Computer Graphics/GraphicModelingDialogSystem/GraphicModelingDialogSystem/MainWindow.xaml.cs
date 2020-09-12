@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -23,6 +24,36 @@ namespace GraphicModelingDialogSystem
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void LineButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void EllipseButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RectangleButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void PenButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AboutMe_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("My name is Milcho Arnaudov and I am a .NET Software Developer.");
         }
     }
 }

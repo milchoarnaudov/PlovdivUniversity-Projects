@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:GraphicModelingDialogSystem"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel>
-        <Menu Height="20">
+    <DockPanel>
+        <Menu Height="20" DockPanel.Dock="Top">
             <MenuItem Header="File"  >
                 <MenuItem Header="New"></MenuItem>
                 <MenuItem Header="Open"></MenuItem>
@@ -40,8 +40,10 @@
                          Content="Pen" Height="50" Width="80"/>
         </ToolBar>
         
-        <Canvas x:Name="Sheet">
-            
-        </Canvas>
-    </StackPanel>
+        <Canvas x:Name="Sheet"
+                Background="Yellow"
+                MouseDown="Sheet_MouseDown"
+                MouseUp="Sheet_MouseUp"
+                MouseMove="Sheet_MouseMove"/>
+    </DockPanel>
 </Window>

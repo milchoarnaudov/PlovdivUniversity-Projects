@@ -9,39 +9,65 @@
     <DockPanel>
         <Menu Height="20" DockPanel.Dock="Top">
             <MenuItem Header="File"  >
-                <MenuItem Header="New"></MenuItem>
+                <MenuItem Header="New" Click="ClearSheet_Click"></MenuItem>
                 <MenuItem Header="Open"></MenuItem>
                 <MenuItem Header="Save"></MenuItem>
                 <MenuItem Header="Save As"></MenuItem>
                 <MenuItem Header="Close" Click="Close_Click"></MenuItem>
             </MenuItem>
-            <MenuItem Header="Settings"></MenuItem>
             <MenuItem Header="About">
                 <MenuItem Header="About Me" Click="AboutMe_Click"></MenuItem>
             </MenuItem>
         </Menu>
+
         <ToolBar Name="DrawingTools" DockPanel.Dock="Top" Height="25">
-            <RadioButton x:Name="LineButton" 
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="10,0,0,0" Text="Choose Shape: "></TextBlock>
+                <RadioButton x:Name="LineButton" 
                          Click="LineButton_Click" 
-                         Background="LightGray" 
-                         Content="Line" Height="50" Width="80"
-                         IsChecked="True"/>
-            <RadioButton x:Name="EllipseButton" 
-                         Click="EllipseButton_Click"
-                         Background="LightGray"
-                         Content="Ellipse" Height="50" Width="80"/>
-            <RadioButton x:Name="RectangleButton" 
+                         Content="Line" Margin="5,2,0,0" IsChecked="True" />
+                <RadioButton x:Name="RectangleButton" 
                          Click="RectangleButton_Click"
-                         Background="LightGray" 
-                         Content="Rectangle" Height="50" Width="80"/>
-            <RadioButton x:Name="PenButton"
+                         Content="Rectangle" Margin="5,2,0,0"  />
+                <RadioButton x:Name="EllipseButton" 
+                         Click="EllipseButton_Click"
+                         Content="Ellipse" Margin="5,2,0,0"/>
+                <RadioButton x:Name="PenButton"
                          Click="PenButton_Click"
-                         Background="LightGray" 
-                         Content="Pen" Height="50" Width="80"/>
+                         Content="Pen" Margin="5,2,0,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="10,0,0,0" Text="Choose Color: "></TextBlock>
+                <ComboBox x:Name="ChooseColor" SelectedIndex="7" SelectionChanged="ChooseColor_SelectionChanged" Text="Select Color" Width="100">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <Rectangle Fill="{Binding}" Width="100" Height="20"></Rectangle>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="10,0,0,0" Text="Fill Shape: "></TextBlock>
+                <ComboBox Name="FillShape" SelectedIndex="0" SelectionChanged="FillShape_SelectionChanged">
+                    <ComboBoxItem>
+                        <TextBlock>No Fill</TextBlock>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock>Solid Color</TextBlock>
+                    </ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="10,0,0,0" Text="Opacity"></TextBlock>
+                <Slider Value="1" x:Name="OpacitySlider" ValueChanged="Opacity_ValueChanged" TickPlacement="BottomRight" Maximum="1" Width="50" Height="20" TickFrequency="0.1"></Slider>
+            </StackPanel>
+
         </ToolBar>
-        
         <Canvas x:Name="Sheet"
-                Background="Yellow"
+                Background="Transparent"
                 MouseDown="Sheet_MouseDown"
                 MouseUp="Sheet_MouseUp"
                 MouseMove="Sheet_MouseMove"/>

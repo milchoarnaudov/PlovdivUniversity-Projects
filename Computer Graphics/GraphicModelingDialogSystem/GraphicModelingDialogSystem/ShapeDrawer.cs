@@ -7,16 +7,30 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
+using System.Xml.Schema;
 
 namespace GraphicModelingDialogSystem
 {
     class ShapeDrawer
     {
+        public ShapeDrawer()
+        {
+            this.Color = Brushes.Black;
+            this.Opacity = 1;
+            this.FillColor = Brushes.Transparent;
+        }
+
+        public SolidColorBrush Color { get; set; }
+        public double Opacity { get; set; }
+        public SolidColorBrush FillColor { get; set; }
+
         public Rectangle DrawRectangle(Point start, Point end)
         {
             Rectangle rectangle = new Rectangle()
             {
-                Stroke = Brushes.Blue,
+                Stroke = this.Color,
+                Opacity = this.Opacity,
+                Fill = this.FillColor,
                 StrokeThickness = 4,
             };
 
@@ -49,7 +63,9 @@ namespace GraphicModelingDialogSystem
         {
             Ellipse ellipse = new Ellipse()
             {
-                Stroke = Brushes.Blue,
+                Stroke = this.Color,
+                Opacity = this.Opacity,
+                Fill = this.FillColor,
                 StrokeThickness = 4,
                 Height = 10,
                 Width = 10
@@ -84,7 +100,9 @@ namespace GraphicModelingDialogSystem
         {
             Line line = new Line()
             {
-                Stroke = Brushes.Blue,
+                Stroke = this.Color,
+                Opacity = this.Opacity,
+                Fill = this.FillColor,
                 X1 = start.X,
                 Y1 = start.Y - 50,
                 X2 = end.X,

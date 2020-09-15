@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -22,7 +23,8 @@ namespace GraphicModelingDialogSystem
     /// </summary>
     public partial class MainWindow : Window
     {
-        private ShapeDrawer shapeDrawer;
+        private readonly ShapeDrawer shapeDrawer;
+        private readonly IEnumerable<SolidColorBrush> solidColorBrushes;
         private Enums.Shape currentShape;
         private Point start;
         private Point end;
@@ -33,6 +35,13 @@ namespace GraphicModelingDialogSystem
 
             this.currentShape = Enums.Shape.Line;
             shapeDrawer = new ShapeDrawer();
+
+            this.solidColorBrushes = typeof(Brushes).GetProperties().Select((x) =>
+            {
+                return (x.GetValue(null) as SolidColorBrush);
+            });
+
+            AddColorsToMenus();
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)
@@ -57,7 +66,6 @@ namespace GraphicModelingDialogSystem
 
         private void PenButton_Click(object sender, RoutedEventArgs e)
         {
-            // TODO
         }
 
         private void AboutMe_Click(object sender, RoutedEventArgs e)
@@ -90,18 +98,58 @@ namespace GraphicModelingDialogSystem
             switch (currentShape)
             {
                 case Enums.Shape.Line:
-                    shape = shapeDrawer.DrawLine(start, end);
+                    shape = this.shapeDrawer.DrawLine(start, end);
                     break;
                 case Enums.Shape.Ellipse:
-                    shape = shapeDrawer.DrawEllipse(start, end);
+                    shape = this.shapeDrawer.DrawEllipse(start, end);
                     break;
                 case Enums.Shape.Rectangle:
-                    shape = shapeDrawer.DrawRectangle(start, end);
+                    shape = this.shapeDrawer.DrawRectangle(start, end);
                     break;
                 default: throw new Exception("Shape is not selected");
             }
 
-            Sheet.Children.Add(shape);
+            this.Sheet.Children.Add(shape);
+        }
+
+        private void ClearSheet_Click(object sender, RoutedEventArgs e)
+        {
+            this.Sheet.Children.Clear();
+            MessageBox.Show("The sheet is cleared.");
+        }
+
+        private void Opacity_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            if (!this.IsLoaded) return;
+
+            this.shapeDrawer.Opacity = this.OpacitySlider.Value;
+        }
+
+        private void AddColorsToMenus()
+        {
+            this.ChooseColor.ItemsSource = this.solidColorBrushes.Select(x => x.Color.ToString());
+        }
+
+        private void FillShape_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (!this.IsLoaded) return;
+
+            switch (this.FillShape.SelectedIndex)
+            {
+                case 0:
+                    this.shapeDrawer.FillColor = Brushes.Transparent;
+                    break;
+                case 1:
+                    this.shapeDrawer.FillColor = shapeDrawer.Color;
+                    break;
+            }
+        }
+
+        private void ChooseColor_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (!this.IsLoaded) return;
+
+            this.shapeDrawer.Color = (SolidColorBrush)(new BrushConverter().ConvertFrom(ChooseColor.SelectedItem));
         }
     }
 }

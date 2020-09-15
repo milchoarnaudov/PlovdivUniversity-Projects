@@ -41,7 +41,7 @@ namespace GraphicModelingDialogSystem
                 return (x.GetValue(null) as SolidColorBrush);
             });
 
-            AddColorsToMenus();
+            this.AddColorsToMenus();
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)
@@ -66,6 +66,7 @@ namespace GraphicModelingDialogSystem
 
         private void PenButton_Click(object sender, RoutedEventArgs e)
         {
+            this.currentShape = Enums.Shape.Pen;
         }
 
         private void AboutMe_Click(object sender, RoutedEventArgs e)
@@ -80,7 +81,10 @@ namespace GraphicModelingDialogSystem
 
         private void Sheet_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            DrawShape(currentShape);
+            if (currentShape != Enums.Shape.Pen)
+            {
+                this.DrawShape();
+            }
         }
 
         private void Sheet_MouseMove(object sender, MouseEventArgs e)
@@ -88,14 +92,20 @@ namespace GraphicModelingDialogSystem
             if (e.LeftButton == MouseButtonState.Pressed)
             {
                 end = e.GetPosition(this);
+
+                if (currentShape == Enums.Shape.Pen)
+                {
+                    this.DrawShape();
+                    this.start = e.GetPosition(this);
+                }
             }
         }
 
-        private void DrawShape(Enums.Shape currentShape)
+        private void DrawShape()
         {
             Shape shape;
 
-            switch (currentShape)
+            switch (this.currentShape)
             {
                 case Enums.Shape.Line:
                     shape = this.shapeDrawer.DrawLine(start, end);
@@ -105,6 +115,9 @@ namespace GraphicModelingDialogSystem
                     break;
                 case Enums.Shape.Rectangle:
                     shape = this.shapeDrawer.DrawRectangle(start, end);
+                    break;
+                case Enums.Shape.Pen:
+                    shape = this.shapeDrawer.Pen(start, end);
                     break;
                 default: throw new Exception("Shape is not selected");
             }

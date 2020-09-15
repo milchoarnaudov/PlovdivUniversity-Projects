@@ -102,7 +102,21 @@ namespace GraphicModelingDialogSystem
             {
                 Stroke = this.Color,
                 Opacity = this.Opacity,
-                Fill = this.FillColor,
+                X1 = start.X,
+                Y1 = start.Y - 50,
+                X2 = end.X,
+                Y2 = end.Y - 50
+            };
+
+            return line;
+        }
+
+        public Line Pen(Point start, Point end)
+        {
+            Line line = new Line
+            {
+                Stroke = this.Color,
+                Opacity = this.Opacity,
                 X1 = start.X,
                 Y1 = start.Y - 50,
                 X2 = end.X,

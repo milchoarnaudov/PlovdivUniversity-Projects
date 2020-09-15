@@ -13,7 +13,8 @@ namespace GraphicModelingDialogSystem.Utils
         {
             Line,
             Ellipse,
-            Rectangle
+            Rectangle,
+            Pen
         }
     }
 }

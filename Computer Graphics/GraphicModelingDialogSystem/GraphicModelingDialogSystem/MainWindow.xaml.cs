@@ -1,4 +1,6 @@
-﻿using GraphicModelingDialogSystem.Utils;
+﻿using GraphicModelingDialogSystem.Save;
+using GraphicModelingDialogSystem.Utils;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +28,7 @@ namespace GraphicModelingDialogSystem
         private readonly ShapeDrawer shapeDrawer;
         private readonly IEnumerable<SolidColorBrush> solidColorBrushes;
         private Enums.Shape currentShape;
+        private readonly IImageSaver imageSaver;
         private Point start;
         private Point end;
 
@@ -34,13 +37,9 @@ namespace GraphicModelingDialogSystem
             InitializeComponent();
 
             this.currentShape = Enums.Shape.Line;
-            shapeDrawer = new ShapeDrawer();
-
-            this.solidColorBrushes = typeof(Brushes).GetProperties().Select((x) =>
-            {
-                return (x.GetValue(null) as SolidColorBrush);
-            });
-
+            this.shapeDrawer = new ShapeDrawer();
+            this.solidColorBrushes = typeof(Brushes).GetProperties().Select((x) => (x.GetValue(null) as SolidColorBrush));
+            this.imageSaver = new SaveImageToFile();
             this.AddColorsToMenus();
         }
 
@@ -163,6 +162,44 @@ namespace GraphicModelingDialogSystem
             if (!this.IsLoaded) return;
 
             this.shapeDrawer.Color = (SolidColorBrush)(new BrushConverter().ConvertFrom(ChooseColor.SelectedItem));
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("The image will be saved in the /bin folder in a PNG format. Are you sure?", "Save image?", MessageBoxButton.YesNo);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                this.imageSaver.SaveToPng(Sheet);
+                MessageBox.Show("Image Saved Successfully!", "Saved!");
+            }
+        }
+
+        private void SaveAs_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "PNG Image (*.png)|*.png|JPEG Image (*.jpeg)|*.jpeg"
+            };
+
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                this.imageSaver.FileName = saveFileDialog.FileName;
+
+                if (saveFileDialog.FileName.Contains(".png"))
+                {
+                    this.imageSaver.SaveToPng(this.Sheet);
+                    MessageBox.Show("Image Saved Successfully!", "Saved!");
+                }
+                else if (saveFileDialog.FileName.Contains(".jpeg"))
+                {
+                    this.Sheet.Background = Brushes.White;
+                    this.imageSaver.SaveToJpeg(this.Sheet);
+                    MessageBox.Show("Image Saved Successfully!", "Saved!");
+                    this.Sheet.Background = Brushes.Transparent;
+                }
+            }
         }
     }
 }

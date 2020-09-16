@@ -156,7 +156,14 @@ namespace GraphicModelingDialogSystem
         {
             if (!this.IsLoaded) return;
 
-            this.shapeDrawer.Color = (SolidColorBrush)(new BrushConverter().ConvertFrom(ChooseColor.SelectedItem));
+            SolidColorBrush selectedColor = (SolidColorBrush)(new BrushConverter().ConvertFrom(ChooseColor.SelectedItem));
+
+            this.shapeDrawer.Color = selectedColor;
+
+            if (this.shapeDrawer.FillColor != Brushes.Transparent)
+            {
+                this.shapeDrawer.FillColor = selectedColor;
+            }
         }
 
         private void SaveImage_Click(object sender, RoutedEventArgs e)

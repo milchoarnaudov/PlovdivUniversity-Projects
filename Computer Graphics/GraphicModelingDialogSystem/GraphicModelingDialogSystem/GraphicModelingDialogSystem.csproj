@@ -55,8 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Save\IImageSaver.cs" />
-    <Compile Include="Save\SaveImageToFile.cs" />
+    <Compile Include="FileOperations\Save\IImageSaver.cs" />
+    <Compile Include="FileOperations\Save\SaveImageToFile.cs" />
     <Compile Include="ShapeDrawer.cs" />
     <Compile Include="Utils\Enums.cs" />
     <Page Include="MainWindow.xaml">
@@ -98,8 +98,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Open\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

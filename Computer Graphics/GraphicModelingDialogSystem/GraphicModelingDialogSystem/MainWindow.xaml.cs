@@ -1,23 +1,15 @@
-﻿using GraphicModelingDialogSystem.Save;
+﻿using GraphicModelingDialogSystem.FileOperations.Save;
 using GraphicModelingDialogSystem.Utils;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Markup;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml;
 
@@ -218,6 +210,7 @@ namespace GraphicModelingDialogSystem
 
         private void OpenModel_Click(object sender, RoutedEventArgs e)
         {
+
             string modelAsString = String.Empty;
             OpenFileDialog openFileDialog = new OpenFileDialog();
 

@@ -3,6 +3,7 @@ using GraphicModelingDialogSystem.Utils;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -13,10 +14,12 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml;
 
 namespace GraphicModelingDialogSystem
 {
@@ -164,18 +167,18 @@ namespace GraphicModelingDialogSystem
             this.shapeDrawer.Color = (SolidColorBrush)(new BrushConverter().ConvertFrom(ChooseColor.SelectedItem));
         }
 
-        private void Save_Click(object sender, RoutedEventArgs e)
+        private void SaveImage_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("The image will be saved in the /bin folder in a PNG format. Are you sure?", "Save image?", MessageBoxButton.YesNo);
+            MessageBoxResult result = MessageBox.Show("The image will be saved in the /bin folder in a PNG format. Are you sure you want to proceed?", "Save Image?", MessageBoxButton.YesNo);
 
             if (result == MessageBoxResult.Yes)
             {
-                this.imageSaver.SaveToPng(Sheet);
+                this.imageSaver.SaveToPng(this.Sheet);
                 MessageBox.Show("Image Saved Successfully!", "Saved!");
             }
         }
 
-        private void SaveAs_Click(object sender, RoutedEventArgs e)
+        private void SaveImageAs_Click(object sender, RoutedEventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog
             {
@@ -199,6 +202,40 @@ namespace GraphicModelingDialogSystem
                     MessageBox.Show("Image Saved Successfully!", "Saved!");
                     this.Sheet.Background = Brushes.Transparent;
                 }
+            }
+        }
+
+        private void SaveModel_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("The image model will be saved in the /bin folder. Are you sure you want to proceed?", "Save Model?", MessageBoxButton.YesNo);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                this.imageSaver.SaveModel(this.Sheet);
+                MessageBox.Show("Model Saved Successfully!", "Saved!");
+            }
+        }
+
+        private void OpenModel_Click(object sender, RoutedEventArgs e)
+        {
+            string modelAsString = String.Empty;
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            if (openFileDialog.ShowDialog() == true)
+            {
+                modelAsString = File.ReadAllText(openFileDialog.FileName);
+            }
+
+            StringReader stringReader = new StringReader(modelAsString);
+            XmlReader xmlReader = XmlReader.Create(stringReader);
+            Canvas model = (Canvas)XamlReader.Load(xmlReader);
+            List<FrameworkElement> childrenList = model.Children.Cast<FrameworkElement>().ToList();
+            Sheet.Children.Clear();
+
+            foreach (var child in childrenList)
+            {
+                model.Children.Remove(child);
+                Sheet.Children.Add(child);
             }
         }
     }

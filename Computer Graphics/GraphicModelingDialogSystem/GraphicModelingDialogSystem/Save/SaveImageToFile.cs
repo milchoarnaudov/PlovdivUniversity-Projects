@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -42,6 +43,19 @@ namespace GraphicModelingDialogSystem.Save
             using (var stream = File.Create(FileName))
             {
                 encoder.Save(stream);
+            }
+        }
+
+        public void SaveModel(FrameworkElement canvas)
+        {
+            string mystrXAML = XamlWriter.Save(canvas);
+
+            using (var filestream = File.Create("model.xaml"))
+            {
+                using (var streamwriter = new StreamWriter(filestream))
+                {
+                    streamwriter.Write(mystrXAML);
+                }
             }
         }
 

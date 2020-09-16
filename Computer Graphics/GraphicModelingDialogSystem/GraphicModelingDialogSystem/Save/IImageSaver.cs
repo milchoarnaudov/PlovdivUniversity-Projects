@@ -12,5 +12,6 @@ namespace GraphicModelingDialogSystem.Save
         string FileName { get; set; }
         void SaveToPng(FrameworkElement image);
         void SaveToJpeg(FrameworkElement image);
+        void SaveModel(FrameworkElement image);
     }
 }

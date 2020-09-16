@@ -10,9 +10,10 @@
         <Menu Height="20" DockPanel.Dock="Top">
             <MenuItem Header="File">
                 <MenuItem Header="New" Click="ClearSheet_Click"></MenuItem>
-                <MenuItem Header="Open"></MenuItem>
-                <MenuItem Header="Save" Click="Save_Click"></MenuItem>
-                <MenuItem Header="Save As" Click="SaveAs_Click"></MenuItem>
+                <MenuItem Header="Open Model" Click="OpenModel_Click"></MenuItem>
+                <MenuItem Header="Save Image" Click="SaveImage_Click"></MenuItem>
+                <MenuItem Header="Save Model" Click="SaveModel_Click"></MenuItem>
+                <MenuItem Header="Save Image As" Click="SaveImageAs_Click"></MenuItem>
                 <MenuItem Header="Close" Click="Close_Click"></MenuItem>
             </MenuItem>
             <MenuItem Header="About">

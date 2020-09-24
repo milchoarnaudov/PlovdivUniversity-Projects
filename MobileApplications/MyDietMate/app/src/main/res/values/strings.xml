@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyDietMate</string>
+    <string name="header">Calories Calculator</string>
+    <string name="btn_calc">Calculate</string>
+    <string name="enter_your_weight">Enter Your Weight (kg)</string>
+    <string name="enter_your_height">Enter Your Height (cm)</string>
+    <string name="enter_you_age">Enter Your Age</string>
+    <string name="basal_metabolic_rate">Basal Metabolic Rate: </string>
+    <string name="calories_to_lose_weight">Calories to Lose Weight: </string>
+    <string name="calories_to_gain_weight">Calories to Gain Weight: </string>
+</resources>

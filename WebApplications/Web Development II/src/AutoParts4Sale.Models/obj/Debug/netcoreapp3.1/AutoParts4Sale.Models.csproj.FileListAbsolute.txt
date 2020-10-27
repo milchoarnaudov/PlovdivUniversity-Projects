@@ -1,0 +1,9 @@
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Models\bin\Debug\netcoreapp3.1\AutoParts4Sale.Models.deps.json
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Models\bin\Debug\netcoreapp3.1\AutoParts4Sale.Models.dll
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Models\bin\Debug\netcoreapp3.1\AutoParts4Sale.Models.pdb
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Models\obj\Debug\netcoreapp3.1\AutoParts4Sale.Models.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Models\obj\Debug\netcoreapp3.1\AutoParts4Sale.Models.AssemblyInfo.cs
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Models\obj\Debug\netcoreapp3.1\AutoParts4Sale.Models.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Models\obj\Debug\netcoreapp3.1\AutoParts4Sale.Models.dll
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Models\obj\Debug\netcoreapp3.1\AutoParts4Sale.Models.pdb
+C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Models\obj\Debug\netcoreapp3.1\AutoParts4Sale.Models.csprojAssemblyReference.cache

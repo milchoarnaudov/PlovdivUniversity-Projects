@@ -1,0 +1,59 @@
+﻿namespace AutoParts4Sale.Repository.Implementation
+{
+    using System.Collections.Generic;
+    using System.Linq;
+    using AutoParts4Sale.Core;
+    using AutoParts4Sale.Data;
+
+    public class ArticleRepository : IRepository<Article, int>
+    {
+        AutoParts4SaleDbContext _context;
+
+        public ArticleRepository(AutoParts4SaleDbContext context)
+        {
+            _context = context;
+        }
+
+        public Article Add(Article article)
+        {
+            if(article != null)
+            {
+                _context.Articles.Add(article);
+                _context.SaveChanges();
+            }
+
+            return article;
+        }
+
+        public Article Delete(int id)
+        {
+            Article article = GetById(id);
+
+            if(article != null)
+            {
+                _context.Articles.Remove(article);
+                _context.SaveChanges();
+            }
+
+            return article;
+        }
+
+        public IEnumerable<Article> GetAll()
+        {
+            return _context.Articles.AsEnumerable();
+        }
+
+        public Article GetById(int id)
+        {
+            Article article = _context.Articles.Find(id);
+
+            return article;
+        }
+
+        public Article Update(int id)
+        {
+            // TODO
+            return null;
+        }
+    }
+}

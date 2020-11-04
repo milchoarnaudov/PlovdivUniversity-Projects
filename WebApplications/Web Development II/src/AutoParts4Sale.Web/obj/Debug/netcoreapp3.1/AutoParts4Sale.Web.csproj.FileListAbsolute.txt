@@ -1,8 +1,0 @@
-C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Web\obj\Debug\netcoreapp3.1\AutoParts4Sale.Web.csprojAssemblyReference.cache
-C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Web\obj\Debug\netcoreapp3.1\AutoParts4Sale.Web.AssemblyInfoInputs.cache
-C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Web\obj\Debug\netcoreapp3.1\AutoParts4Sale.Web.AssemblyInfo.cs
-C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Web\obj\Debug\netcoreapp3.1\AutoParts4Sale.Web.csproj.CoreCompileInputs.cache
-C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Web\obj\Debug\netcoreapp3.1\AutoParts4Sale.Web.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Web\obj\Debug\netcoreapp3.1\AutoParts4Sale.Web.RazorAssemblyInfo.cache
-C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Web\obj\Debug\netcoreapp3.1\AutoParts4Sale.Web.RazorAssemblyInfo.cs
-C:\Users\DELL\Desktop\GitHubProjects\Plovdiv-University-Projects\WebApplications\Web Development II\src\AutoParts4Sale.Web\obj\Debug\netcoreapp3.1\AutoParts4Sale.Web.MvcApplicationPartsAssemblyInfo.cs

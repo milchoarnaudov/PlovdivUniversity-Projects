@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoParts4Sale.Web", "AutoParts4Sale.Web\AutoParts4Sale.Web.csproj", "{E8222DA1-69C2-4D39-96F3-B13EB1CCC24D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{41231953-E5AA-44E6-9340-F6243EF1D44C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoParts4Sale.Data", "Data\AutoParts4Sale.Data\AutoParts4Sale.Data.csproj", "{F102E987-28FB-4C19-A326-AF899E63E07D}"
@@ -13,16 +11,20 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoParts4Sale.Data.Models"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoParts4Sale.Data.Repositories", "Data\AutoParts4Sale.Data.Repository\AutoParts4Sale.Data.Repositories.csproj", "{3A88D200-A9CE-4E5E-8968-DE5605E29A81}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{AE9D6F78-6599-426E-B20F-207ED8BB934B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoParts4Sale.Services", "Services\AutoParts4Sale.Services\AutoParts4Sale.Services.csproj", "{91FE4E79-112E-417B-8753-8F05CBAC7918}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{8A3BEAD0-A5A5-41C9-8B77-96C20647E8C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoParts4Sale.Web", "AutoParts4Sale.Web\AutoParts4Sale.Web.csproj", "{7FBFEFEA-CD5D-4D10-9348-D4F6301C3F29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E8222DA1-69C2-4D39-96F3-B13EB1CCC24D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E8222DA1-69C2-4D39-96F3-B13EB1CCC24D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E8222DA1-69C2-4D39-96F3-B13EB1CCC24D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E8222DA1-69C2-4D39-96F3-B13EB1CCC24D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F102E987-28FB-4C19-A326-AF899E63E07D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F102E987-28FB-4C19-A326-AF899E63E07D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F102E987-28FB-4C19-A326-AF899E63E07D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,6 +37,14 @@ Global
 		{3A88D200-A9CE-4E5E-8968-DE5605E29A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A88D200-A9CE-4E5E-8968-DE5605E29A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A88D200-A9CE-4E5E-8968-DE5605E29A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91FE4E79-112E-417B-8753-8F05CBAC7918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91FE4E79-112E-417B-8753-8F05CBAC7918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91FE4E79-112E-417B-8753-8F05CBAC7918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91FE4E79-112E-417B-8753-8F05CBAC7918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FBFEFEA-CD5D-4D10-9348-D4F6301C3F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FBFEFEA-CD5D-4D10-9348-D4F6301C3F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FBFEFEA-CD5D-4D10-9348-D4F6301C3F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FBFEFEA-CD5D-4D10-9348-D4F6301C3F29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +53,8 @@ Global
 		{F102E987-28FB-4C19-A326-AF899E63E07D} = {41231953-E5AA-44E6-9340-F6243EF1D44C}
 		{5E7C71C2-BE45-4785-B3C1-E37A7C6C3530} = {41231953-E5AA-44E6-9340-F6243EF1D44C}
 		{3A88D200-A9CE-4E5E-8968-DE5605E29A81} = {41231953-E5AA-44E6-9340-F6243EF1D44C}
+		{91FE4E79-112E-417B-8753-8F05CBAC7918} = {AE9D6F78-6599-426E-B20F-207ED8BB934B}
+		{7FBFEFEA-CD5D-4D10-9348-D4F6301C3F29} = {8A3BEAD0-A5A5-41C9-8B77-96C20647E8C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {990BD03A-6CFD-4CA2-8D06-4D14F2875BBD}

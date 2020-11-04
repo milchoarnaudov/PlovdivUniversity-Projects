@@ -7,9 +7,9 @@
 
     public class CarModelRepository : IRepository<CarModel, int>
     {
-        private readonly AutoParts4SaleDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public CarModelRepository(AutoParts4SaleDbContext context)
+        public CarModelRepository(ApplicationDbContext context)
         {
             _context = context;
         }

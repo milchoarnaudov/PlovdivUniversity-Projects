@@ -7,9 +7,9 @@
 
     public class ArticleRepository : IRepository<Article, int>
     {
-        AutoParts4SaleDbContext _context;
+        ApplicationDbContext _context;
 
-        public ArticleRepository(AutoParts4SaleDbContext context)
+        public ArticleRepository(ApplicationDbContext context)
         {
             _context = context;
         }

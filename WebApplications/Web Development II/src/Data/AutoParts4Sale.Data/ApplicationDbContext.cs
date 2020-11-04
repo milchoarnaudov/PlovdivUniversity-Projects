@@ -4,14 +4,14 @@
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
 
-    public class AutoParts4SaleDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext
     {
-        public AutoParts4SaleDbContext()
+        public ApplicationDbContext()
         {
 
         }
 
-        public AutoParts4SaleDbContext(DbContextOptions options)
+        public ApplicationDbContext(DbContextOptions options)
             : base(options)
         {
 

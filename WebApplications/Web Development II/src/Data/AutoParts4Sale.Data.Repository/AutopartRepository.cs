@@ -7,9 +7,9 @@
 
     public class AutopartRepository : IRepository<Autopart, int>
     {
-        private readonly AutoParts4SaleDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public AutopartRepository(AutoParts4SaleDbContext context)
+        public AutopartRepository(ApplicationDbContext context)
         {
             _context = context;
         }

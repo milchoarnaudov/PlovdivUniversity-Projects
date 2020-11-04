@@ -7,9 +7,9 @@
 
     public class CategoryRepository : IRepository<Category, int>
     {
-        private readonly AutoParts4SaleDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public CategoryRepository(AutoParts4SaleDbContext context)
+        public CategoryRepository(ApplicationDbContext context)
         {
             _context = context;
         }

@@ -9,7 +9,7 @@ using AutoParts4Sale.Core;
 using AutoParts4Sale.Data;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.EntityFrameworkCore;
-using AutoParts4Sale.Repository.Implementation;
+using AutoParts4Sale.Data.Repositories;
 
 namespace AutoParts4Sale
 {

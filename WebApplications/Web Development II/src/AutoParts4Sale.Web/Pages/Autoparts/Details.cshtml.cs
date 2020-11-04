@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AutoParts4Sale.Core;
 using AutoParts4Sale.Data;
-using AutoParts4Sale.Repository.Implementation;
+using AutoParts4Sale.Data.Repositories;
 
 namespace AutoParts4Sale
 {

@@ -1,13 +1,5 @@
 {
   "ConnectionStrings": {
     "DefaultConnection": "Server=.;Database=aspnet-AutoParts4Sale.Web-0278F133-8D30-4645-ADC8-09F57351E568;Trusted_Connection=True;MultipleActiveResultSets=true"
-  },
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft": "Warning",
-      "Microsoft.Hosting.Lifetime": "Information"
-    }
-  },
-  "AllowedHosts": "*"
+  }
 }

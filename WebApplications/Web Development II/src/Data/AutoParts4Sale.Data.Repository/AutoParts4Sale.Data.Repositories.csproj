@@ -7,7 +7,6 @@
   <ItemGroup>
     <ProjectReference Include="..\AutoParts4Sale.Data.Models\AutoParts4Sale.Data.Models.csproj" />
     <ProjectReference Include="..\AutoParts4Sale.Data\AutoParts4Sale.Data.csproj" />
-    <ProjectReference Include="..\AutoParts4Sale.Models\AutoParts4Sale.Data.Models.csproj" />
   </ItemGroup>
 
 </Project>

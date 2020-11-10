@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>AutoParts4Sale.Data.Models</RootNamespace>
-    <AssemblyName>AutoParts4Sale.Data.Models</AssemblyName>
+    <RootNamespace>AutomorgueShop.Data.Models</RootNamespace>
+    <AssemblyName>AutomorgueShop.Data.Models</AssemblyName>
   </PropertyGroup>
 
 </Project>

@@ -5,23 +5,23 @@ VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{41231953-E5AA-44E6-9340-F6243EF1D44C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomorgueShop.Data", "Data\AutoParts4Sale.Data\AutomorgueShop.Data.csproj", "{F102E987-28FB-4C19-A326-AF899E63E07D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomorgueShop.Data", "Data\AutomorgueShop.Data\AutomorgueShop.Data.csproj", "{F102E987-28FB-4C19-A326-AF899E63E07D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomorgueShop.Data.Models", "Data\AutoParts4Sale.Data.Models\AutomorgueShop.Data.Models.csproj", "{5E7C71C2-BE45-4785-B3C1-E37A7C6C3530}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomorgueShop.Data.Models", "Data\AutomorgueShop.Data.Models\AutomorgueShop.Data.Models.csproj", "{5E7C71C2-BE45-4785-B3C1-E37A7C6C3530}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomorgueShop.Data.Repositories", "Data\AutoParts4Sale.Data.Repository\AutomorgueShop.Data.Repositories.csproj", "{3A88D200-A9CE-4E5E-8968-DE5605E29A81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomorgueShop.Data.Repositories", "Data\AutomorgueShop.Data.Repository\AutomorgueShop.Data.Repositories.csproj", "{3A88D200-A9CE-4E5E-8968-DE5605E29A81}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{AE9D6F78-6599-426E-B20F-207ED8BB934B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomorgueShop.Services", "Services\AutoParts4Sale.Services\AutomorgueShop.Services.csproj", "{91FE4E79-112E-417B-8753-8F05CBAC7918}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomorgueShop.Services", "Services\AutomorgueShop.Services\AutomorgueShop.Services.csproj", "{91FE4E79-112E-417B-8753-8F05CBAC7918}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{8A3BEAD0-A5A5-41C9-8B77-96C20647E8C9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomorgueShop.Web", "Web\AutoParts4Sale.Web\AutomorgueShop.Web.csproj", "{093B5629-78A5-4647-9023-C3558FF5FB34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomorgueShop.Web", "Web\AutomorgueShop.Web\AutomorgueShop.Web.csproj", "{093B5629-78A5-4647-9023-C3558FF5FB34}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DTO", "DTO", "{39C2D4AF-239F-4AFD-8D8E-DA63AF422454}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomorgueShop.DTO", "DTO\AutoParts4Sale.DTO\AutomorgueShop.DTO.csproj", "{21D2A9D9-FFAB-4725-BCDD-9124F3E1C740}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutomorgueShop.DTO", "DTO\AutomorgueShop.DTO\AutomorgueShop.DTO.csproj", "{21D2A9D9-FFAB-4725-BCDD-9124F3E1C740}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

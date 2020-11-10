@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>aspnet-AutoParts4Sale.Web-0278F133-8D30-4645-ADC8-09F57351E568</UserSecretsId>
+    <UserSecretsId>aspnet-AutomorgueShop.Web-0278F133-8D30-4645-ADC8-09F57351E568</UserSecretsId>
     <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
   </PropertyGroup>
 
@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Data\AutoParts4Sale.Data.Repository\AutomorgueShop.Data.Repositories.csproj" />
-    <ProjectReference Include="..\..\Services\AutoParts4Sale.Services\AutomorgueShop.Services.csproj" />
+    <ProjectReference Include="..\..\Data\AutomorgueShop.Data.Repository\AutomorgueShop.Data.Repositories.csproj" />
+    <ProjectReference Include="..\..\Services\AutomorgueShop.Services\AutomorgueShop.Services.csproj" />
   </ItemGroup>
 
 </Project>

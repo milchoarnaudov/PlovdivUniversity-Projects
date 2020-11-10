@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AutoParts4Sale.Data.Models\AutomorgueShop.Data.Models.csproj" />
+    <ProjectReference Include="..\AutomorgueShop.Data.Models\AutomorgueShop.Data.Models.csproj" />
   </ItemGroup>
 
   <ItemGroup>

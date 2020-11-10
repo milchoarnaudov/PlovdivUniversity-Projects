@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using AutoParts4Sale.Data;
-using AutoParts4Sale.Services;
-using AutoParts4Sale.Data.Repositories;
-using AutoParts4Sale.Data.Models;
+using AutomorgueShop.Data;
+using AutomorgueShop.Services;
+using AutomorgueShop.Data.Repositories;
+using AutomorgueShop.Data.Models;
 
-namespace AutoParts4Sale.Web
+namespace AutomorgueShop.Web
 {
     public class Startup
     {

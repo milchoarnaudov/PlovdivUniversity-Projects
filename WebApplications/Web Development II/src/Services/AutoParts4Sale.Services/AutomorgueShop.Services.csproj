@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\AutoParts4Sale.Data.Repository\AutomorgueShop.Data.Repositories.csproj" />
+    <ProjectReference Include="..\..\DTO\AutoParts4Sale.DTO\AutomorgueShop.DTO.csproj" />
+  </ItemGroup>
+
+</Project>

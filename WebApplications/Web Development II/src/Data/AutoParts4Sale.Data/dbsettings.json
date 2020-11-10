@@ -1,5 +1,5 @@
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=.;Database=AutoParts4Sale;Trusted_Connection=True;MultipleActiveResultSets=true"
+    "DefaultConnection": "Server=.;Database=AutomorgueShop;Trusted_Connection=True;MultipleActiveResultSets=true"
   }
 }

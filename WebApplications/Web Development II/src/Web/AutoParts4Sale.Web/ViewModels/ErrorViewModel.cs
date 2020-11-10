@@ -1,4 +1,4 @@
-namespace AutoParts4Sale.Web.Models
+namespace AutomorgueShop.Web.Models
 {
     public class ErrorViewModel
     {

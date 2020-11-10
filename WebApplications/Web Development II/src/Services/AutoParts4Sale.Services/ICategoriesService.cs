@@ -1,6 +1,6 @@
-﻿namespace AutoParts4Sale.Services
+﻿namespace AutomorgueShop.Services
 {
-    using AutoParts4Sale.DTO;
+    using AutomorgueShop.DTO;
     using System.Collections.Generic;
 
     public interface ICategoriesService

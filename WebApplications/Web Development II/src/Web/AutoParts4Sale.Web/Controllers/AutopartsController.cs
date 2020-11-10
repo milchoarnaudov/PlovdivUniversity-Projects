@@ -1,11 +1,11 @@
-﻿namespace AutoParts4Sale.Web.Controllers
+﻿namespace AutomorgueShop.Web.Controllers
 {
-    using AutoParts4Sale.Services;
+    using AutomorgueShop.Services;
     using Microsoft.AspNetCore.Mvc;
-    using AutoParts4Sale.Web.ViewModels.Autoparts;
+    using AutomorgueShop.Web.ViewModels.Autoparts;
     using System.Linq;
     using Microsoft.AspNetCore.Mvc.Rendering;
-    using AutoParts4Sale.DTO;
+    using AutomorgueShop.DTO;
 
     public class AutopartsController : Controller
     {

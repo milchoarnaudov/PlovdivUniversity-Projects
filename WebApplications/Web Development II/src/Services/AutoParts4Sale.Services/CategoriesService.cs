@@ -1,7 +1,7 @@
-﻿namespace AutoParts4Sale.Services
+﻿namespace AutomorgueShop.Services
 {
-    using AutoParts4Sale.Data.Repositories;
-    using AutoParts4Sale.DTO;
+    using AutomorgueShop.Data.Repositories;
+    using AutomorgueShop.DTO;
     using System.Collections.Generic;
     using System.Linq;
 

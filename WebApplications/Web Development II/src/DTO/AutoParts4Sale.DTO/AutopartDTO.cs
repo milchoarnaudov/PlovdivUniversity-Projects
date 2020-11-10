@@ -1,4 +1,4 @@
-﻿namespace AutoParts4Sale.DTO.Autoparts
+﻿namespace AutomorgueShop.DTO.Autoparts
 {
     using System;
 

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using AutoParts4Sale.Web.Models;
+using AutomorgueShop.Web.Models;
 
-namespace AutoParts4Sale.Web.Controllers
+namespace AutomorgueShop.Web.Controllers
 {
     public class HomeController : Controller
     {

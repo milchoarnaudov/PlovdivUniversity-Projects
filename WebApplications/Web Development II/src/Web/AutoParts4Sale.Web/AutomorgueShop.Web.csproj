@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Data\AutoParts4Sale.Data.Repository\AutoParts4Sale.Data.Repositories.csproj" />
-    <ProjectReference Include="..\..\Services\AutoParts4Sale.Services\AutoParts4Sale.Services.csproj" />
+    <ProjectReference Include="..\..\Data\AutoParts4Sale.Data.Repository\AutomorgueShop.Data.Repositories.csproj" />
+    <ProjectReference Include="..\..\Services\AutoParts4Sale.Services\AutomorgueShop.Services.csproj" />
   </ItemGroup>
 
 </Project>

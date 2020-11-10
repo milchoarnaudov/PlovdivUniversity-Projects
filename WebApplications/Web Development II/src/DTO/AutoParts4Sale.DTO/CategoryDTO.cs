@@ -1,4 +1,4 @@
-﻿namespace AutoParts4Sale.DTO
+﻿namespace AutomorgueShop.DTO
 {
     public class CategoryDTO
     {

@@ -1,4 +1,4 @@
-﻿namespace AutoParts4Sale.Data
+﻿namespace AutomorgueShop.Data
 {
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Design;

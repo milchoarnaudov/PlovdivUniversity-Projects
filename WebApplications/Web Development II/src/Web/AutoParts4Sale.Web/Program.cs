@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace AutoParts4Sale.Web
+namespace AutomorgueShop.Web
 {
     public class Program
     {

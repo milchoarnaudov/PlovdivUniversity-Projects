@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace AutoParts4Sale.Data.Migrations
+namespace AutomorgueShop.Data.Migrations
 {
     public partial class InitalCreate : Migration
     {

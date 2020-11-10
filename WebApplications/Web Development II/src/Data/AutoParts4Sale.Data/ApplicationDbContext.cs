@@ -1,6 +1,6 @@
-﻿namespace AutoParts4Sale.Data
+﻿namespace AutomorgueShop.Data
 {
-    using AutoParts4Sale.Data.Models;
+    using AutomorgueShop.Data.Models;
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
 

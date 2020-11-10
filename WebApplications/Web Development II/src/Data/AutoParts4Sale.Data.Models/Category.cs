@@ -1,4 +1,4 @@
-﻿namespace AutoParts4Sale.Data.Models
+﻿namespace AutomorgueShop.Data.Models
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;

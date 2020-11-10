@@ -1,4 +1,4 @@
-﻿namespace AutoParts4Sale.Data.Repositories
+﻿namespace AutomorgueShop.Data.Repositories
 {
     public class Repository
     {

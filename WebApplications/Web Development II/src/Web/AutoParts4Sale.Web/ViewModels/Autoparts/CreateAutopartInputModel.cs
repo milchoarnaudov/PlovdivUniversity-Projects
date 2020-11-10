@@ -1,4 +1,4 @@
-﻿namespace AutoParts4Sale.Web.ViewModels.Autoparts
+﻿namespace AutomorgueShop.Web.ViewModels.Autoparts
 {
     public class CreateAutopartInputModel
     {

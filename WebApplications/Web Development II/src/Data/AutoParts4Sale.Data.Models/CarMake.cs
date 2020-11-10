@@ -5,6 +5,11 @@
 
     public class CarMake
     {
+        public CarMake()
+        {
+            CarModels = new HashSet<CarModel>();
+        }
+
         public int Id { get; set; }
 
         [Required]

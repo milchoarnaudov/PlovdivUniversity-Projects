@@ -17,9 +17,9 @@
 
         public DateTime ModifiedDate { get; set; }
 
-        public int CarMakeId { get; set; }
+        public int CarModelId { get; set; }
 
-        public CarMake CarMake{ get; set; }
+        public CarModel CarModel { get; set; }
 
         public int CategoryId { get; set; }
 

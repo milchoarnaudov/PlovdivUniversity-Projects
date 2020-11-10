@@ -3,25 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace AutoParts4Sale.Data.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class InitalCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
-                name: "Articles",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(nullable: false),
-                    Summary = table.Column<string>(nullable: false),
-                    Content = table.Column<string>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Articles", x => x.Id);
-                });
-
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
@@ -223,16 +208,16 @@ namespace AutoParts4Sale.Data.Migrations
                     Price = table.Column<decimal>(nullable: false),
                     DateAdded = table.Column<DateTime>(nullable: false),
                     ModifiedDate = table.Column<DateTime>(nullable: false),
-                    CarMakeId = table.Column<int>(nullable: false),
+                    CarModelId = table.Column<int>(nullable: false),
                     CategoryId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Autoparts", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Autoparts_CarMakes_CarMakeId",
-                        column: x => x.CarMakeId,
-                        principalTable: "CarMakes",
+                        name: "FK_Autoparts_CarModels_CarModelId",
+                        column: x => x.CarModelId,
+                        principalTable: "CarModels",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -326,9 +311,9 @@ namespace AutoParts4Sale.Data.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Autoparts_CarMakeId",
+                name: "IX_Autoparts_CarModelId",
                 table: "Autoparts",
-                column: "CarMakeId");
+                column: "CarModelId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Autoparts_CategoryId",
@@ -343,9 +328,6 @@ namespace AutoParts4Sale.Data.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Articles");
-
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 
@@ -365,13 +347,13 @@ namespace AutoParts4Sale.Data.Migrations
                 name: "Autoparts");
 
             migrationBuilder.DropTable(
-                name: "CarModels");
-
-            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "CarModels");
 
             migrationBuilder.DropTable(
                 name: "Categories");

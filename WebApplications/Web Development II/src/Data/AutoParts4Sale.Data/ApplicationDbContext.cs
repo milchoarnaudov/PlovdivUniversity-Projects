@@ -25,8 +25,6 @@
 
         public DbSet<CarModel> CarModels { get; set; }
 
-        public DbSet<Article> Articles { get; set; }
-       
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             var seeder = new Seed();

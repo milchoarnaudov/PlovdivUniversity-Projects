@@ -6,6 +6,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using AutoParts4Sale.Data;
+using AutoParts4Sale.Services;
+using AutoParts4Sale.Data.Repositories;
+using AutoParts4Sale.Data.Models;
 
 namespace AutoParts4Sale.Web
 {
@@ -28,6 +31,12 @@ namespace AutoParts4Sale.Web
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddScoped<AutopartRepository>();
+            services.AddScoped<CategoryRepository>();
+            services.AddScoped<CarMakeRepository>();
+            services.AddTransient<IAutopartsService, AutopartsService>();
+            services.AddTransient<IMakesService, MakesService>();
+            services.AddTransient<ICategoriesService, CategoriesService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

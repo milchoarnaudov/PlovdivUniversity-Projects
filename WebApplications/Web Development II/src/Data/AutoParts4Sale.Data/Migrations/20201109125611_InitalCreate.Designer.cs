@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AutoParts4Sale.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201108162935_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20201109125611_InitalCreate")]
+    partial class InitalCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,30 +21,6 @@ namespace AutoParts4Sale.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("AutoParts4Sale.Data.Models.Article", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Summary")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Articles");
-                });
-
             modelBuilder.Entity("AutoParts4Sale.Data.Models.Autopart", b =>
                 {
                     b.Property<int>("Id")
@@ -52,7 +28,7 @@ namespace AutoParts4Sale.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("CarMakeId")
+                    b.Property<int>("CarModelId")
                         .HasColumnType("int");
 
                     b.Property<int>("CategoryId")
@@ -74,7 +50,7 @@ namespace AutoParts4Sale.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CarMakeId");
+                    b.HasIndex("CarModelId");
 
                     b.HasIndex("CategoryId");
 
@@ -466,9 +442,9 @@ namespace AutoParts4Sale.Data.Migrations
 
             modelBuilder.Entity("AutoParts4Sale.Data.Models.Autopart", b =>
                 {
-                    b.HasOne("AutoParts4Sale.Data.Models.CarMake", "CarMake")
+                    b.HasOne("AutoParts4Sale.Data.Models.CarModel", "CarModel")
                         .WithMany()
-                        .HasForeignKey("CarMakeId")
+                        .HasForeignKey("CarModelId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

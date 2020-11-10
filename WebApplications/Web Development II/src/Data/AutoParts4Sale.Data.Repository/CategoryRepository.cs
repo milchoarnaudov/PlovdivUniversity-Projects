@@ -7,19 +7,18 @@
 
     public class CategoryRepository : IRepository<Category, int>
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext dbContext;
 
         public CategoryRepository(ApplicationDbContext context)
         {
-            _context = context;
+            dbContext = context;
         }
 
         public Category Add(Category category)
         {
             if(category != null)
             {
-                _context.Categories.Add(category);
-                _context.SaveChanges();
+                dbContext.Categories.Add(category);
             }
 
             return category;
@@ -31,30 +30,25 @@
 
             if(category != null)
             {
-                _context.Remove(category);
-                _context.SaveChanges();
+                dbContext.Remove(category);
             }
 
             return category;
         }
 
-        public IEnumerable<Category> GetAll()
+        public IQueryable<Category> GetAll()
         {
-            return _context.Categories.AsEnumerable();
+            return dbContext.Categories;
         }
 
         public Category GetById(int id)
         {
-            Category category = _context.Categories.FirstOrDefault(m => m.Id == id);
-
-            return category;
+            return dbContext.Categories.FirstOrDefault(x => x.Id == id);
         }
 
-        public Category Update(int id)
+        public Category Update(Category category)
         {
-            //TODO
-
-            return null;
+            return dbContext.Update(category).Entity;
         }
     }
 }

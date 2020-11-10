@@ -1,17 +1,14 @@
 ﻿namespace AutoParts4Sale.Data.Repositories
 {
-    using System.Collections.Generic;
     using System.Linq;
     using AutoParts4Sale.Data;
     using AutoParts4Sale.Data.Models;
 
-    public class AutopartRepository : IRepository<Autopart, int>
+    public class AutopartRepository : Repository, IRepository<Autopart, int>
     {
-        private readonly ApplicationDbContext _context;
-
         public AutopartRepository(ApplicationDbContext context)
+            : base(context)
         {
-            _context = context;
         }
 
         public Autopart Delete(int id)
@@ -20,42 +17,32 @@
 
             if (autopart != null)
             {
-                _context.Autoparts.Remove(autopart);
-                _context.SaveChanges();
+                dbContext.Autoparts.Remove(autopart);
             }
+
             return autopart;
         }
 
-        public IEnumerable<Autopart> GetAll()
+        public IQueryable<Autopart> GetAll()
         {
-            return _context.Autoparts.AsEnumerable();
+            return dbContext.Autoparts;
         }
 
         public Autopart GetById(int id)
         {
-            Autopart autopart = _context.Autoparts.Find(id);
-
-            return autopart;
+            return dbContext.Autoparts.FirstOrDefault(x => x.Id == id);
         }
 
-        public Autopart Update(int id)
+        public Autopart Update(Autopart autopart)
         {
-            // TODO
-
-            return null;
-        }
-
-        public bool AutopartExists(int id)
-        {
-            return _context.Autoparts.Any(e => e.Id == id);
+            return dbContext.Update(autopart).Entity;
         }
 
         public Autopart Add(Autopart autopart)
         {
             if (autopart != null)
             {
-                _context.Autoparts.Add(autopart);
-                _context.SaveChanges();
+                dbContext.Autoparts.Add(autopart);
             }
 
             return autopart;

@@ -7,38 +7,33 @@
 
     public class CarMakeRepository : IRepository<CarMake, int>
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext dbContext;
 
         public CarMakeRepository(ApplicationDbContext context)
         {
-            _context = context;
+            dbContext = context;
         }
 
-        public IEnumerable<CarMake> GetAll()
+        public IQueryable<CarMake> GetAll()
         {
-            return _context.CarMakes.AsEnumerable();
+            return dbContext.CarMakes;
         }
 
         public CarMake GetById(int id)
         {
-            CarMake carMake = _context.CarMakes.Find(id);
-
-            return carMake;
+            return dbContext.CarMakes.FirstOrDefault(x => x.Id == id);
         }
 
-        public CarMake Update(int id)
+        public CarMake Update(CarMake carMake)
         {
-            // TODO
-
-            return null;
+            return dbContext.Update(carMake).Entity;
         }
 
         public CarMake Add(CarMake carMake)
         {
             if (carMake != null)
             {
-                _context.CarMakes.Add(carMake);
-                _context.SaveChanges();
+                dbContext.CarMakes.Add(carMake);
             }
 
             return carMake;
@@ -50,8 +45,7 @@
 
             if (carMake != null)
             {
-                _context.CarMakes.Remove(carMake);
-                _context.SaveChanges();
+                dbContext.CarMakes.Remove(carMake);
             }
 
             return carMake;

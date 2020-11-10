@@ -1,0 +1,11 @@
+﻿@model List<DetailedAutopartViewModel>
+
+@foreach (var autopart in Model)
+{
+    <div>@autopart.Name</div>
+    <div>@autopart.Make</div>
+    <div>@autopart.Model</div>
+    <div>@autopart.DateAdded</div>
+    <div>@autopart.ModifiedDate</div>
+}
+<div>Hi</div>

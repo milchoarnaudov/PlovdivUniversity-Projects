@@ -1,0 +1,40 @@
+﻿@model CreateAutopartViewModel
+
+<form method="post">
+    <label></label>
+    <input name="Name" />
+
+    <label></label>
+    <input name="Price" />
+
+    <select name="CategoryId" id="CategoryId" asp-items="Model.Categories">
+    </select>
+
+    <select name="MakeId" id="MakeId" asp-items="Model.Makes">
+    </select>
+
+    <select name="ModelId" id="ModelId" hidden>
+    </select>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    document.getElementById('MakeId').addEventListener('change', (e) => {
+        const modelSelectElement = document.getElementById('ModelId');
+        modelSelectElement.removeAttribute("hidden");
+
+        modelSelectElement.innerHTML = "<option disabled value=''>Select Car Model</option>";
+        fetch(`/autoparts/getModels?Id=${e.target.value}`)
+            .then((response) => {
+                console.log(response);
+                return response.json();
+            })
+            .then((data) => {
+                Array.prototype.forEach.call(data, function (item, i) {
+                    console.log(item);
+                    document.getElementById('ModelId').innerHTML += `<option value="${item.id}">${item.name}</option>`
+                });
+            });
+    });
+</script>

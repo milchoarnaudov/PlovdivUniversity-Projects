@@ -7,19 +7,18 @@
 
     public class CarModelRepository : IRepository<CarModel, int>
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext dbContext;
 
         public CarModelRepository(ApplicationDbContext context)
         {
-            _context = context;
+            dbContext = context;
         }
 
         public CarModel Add(CarModel carModel)
         {
             if(carModel != null)
             {
-                _context.CarModels.Add(carModel);
-                _context.SaveChanges();
+                dbContext.CarModels.Add(carModel);
             }
 
             return carModel;
@@ -31,30 +30,25 @@
 
             if(carModel != null)
             {
-                _context.CarModels.Remove(carModel);
-                _context.SaveChanges();
+                dbContext.CarModels.Remove(carModel);
             }
 
             return carModel;
         }
 
-        public IEnumerable<CarModel> GetAll()
+        public IQueryable<CarModel> GetAll()
         {
-            return _context.CarModels.AsEnumerable(); ;
+            return dbContext.CarModels;
         }
 
         public CarModel GetById(int id)
         {
-            CarModel carModel = _context.CarModels.Find(id);
-
-            return carModel;
+            return dbContext.CarModels.FirstOrDefault(x => x.Id == id);
         }
 
-        public CarModel Update(int id)
+        public CarModel Update(CarModel carModel)
         {
-            //TODO
-
-            return null;
+            return dbContext.Update(carModel).Entity;
         }
     }
 }

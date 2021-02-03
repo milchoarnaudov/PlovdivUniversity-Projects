@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Data\AutomorgueShop.Data.Repository\AutomorgueShop.Data.Repositories.csproj" />
-    <ProjectReference Include="..\..\DTO\AutomorgueShop.DTO\AutomorgueShop.DTO.csproj" />
+    <ProjectReference Include="..\AutomorgueShop.DTO\AutomorgueShop.DTO.csproj" />
   </ItemGroup>
 
 </Project>

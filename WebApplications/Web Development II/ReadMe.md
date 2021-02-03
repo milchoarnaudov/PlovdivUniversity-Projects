@@ -1,5 +1,3 @@
-The project is from my Web Development II exam.
+## AutomorgueShop
 
-Currently I am refactoring it.
-
-The requirement was to make a web project using ASP.NET MVC.
+## Very simple ASP.NET Core project which I created for an exam

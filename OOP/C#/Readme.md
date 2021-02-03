@@ -1,5 +1,3 @@
-# Hero Game - OOP Exam
-## Overview
-### A computer game where two heroes fight each other in arena
+# Hero Game
 
-## REFACTORED
+## A computer game where two heroes fight each other in arena
